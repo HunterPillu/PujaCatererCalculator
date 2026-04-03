@@ -312,7 +312,14 @@ class InMemoryCateringRepository : CateringRepository {
         Dish(id = 304, name = "Roti", category = "Bread"),
     )
 
-    private val ingredients = listOf(
+    private val ingredients: List<Ingredient> = buildList {
+        dishes.forEach { dish ->
+            addAll(ingredientsForDish(dish))
+        }
+        addAll(buildCoreDishIngredients())
+    }
+
+    private fun buildCoreDishIngredients(): List<Ingredient> = listOf(
         // Chicken Curry (dishId 240)
         Ingredient(240, "Chicken", 250.0, UnitType.GRAM),
         Ingredient(240, "Onion", 45.0, UnitType.GRAM),
@@ -358,6 +365,406 @@ class InMemoryCateringRepository : CateringRepository {
         Ingredient(304, "Oil", 3.0, UnitType.ML),
         Ingredient(304, "Salt", 0.8, UnitType.GRAM),
         Ingredient(304, "Roti", 3.0, UnitType.PIECE),
+    )
+
+    private fun ingredientsForDish(dish: Dish): List<Ingredient> {
+        if (dish.id in setOf(105, 114, 240, 252, 270, 304)) return emptyList()
+
+        return when (dish.category) {
+            "Welcome Drinks" -> welcomeDrinkIngredients(dish)
+            "Namkeen" -> namkeenIngredients(dish)
+            "Sweets" -> sweetIngredients(dish)
+            "Snacks" -> snackIngredients(dish)
+            "Chinese" -> chineseIngredients(dish)
+            "Fruit Counter" -> fruitCounterIngredients(dish)
+            "Bakery Items" -> bakeryIngredients(dish)
+            "South Indian Dishes" -> southIndianIngredients(dish)
+            "Daal" -> daalIngredients(dish)
+            "Rice" -> riceIngredients(dish)
+            "Soup" -> soupIngredients(dish)
+            "Vegetable Indian", "Vegetable on Tawa" -> vegetableIngredients(dish)
+            "Bread", "Punjabi Dish" -> breadIngredients(dish)
+            "Dahi Item" -> dahiIngredients(dish)
+            "Rajasthani Dish" -> rajasthaniIngredients(dish)
+            "Italian Counter" -> italianIngredients(dish)
+            "Thai Counter" -> thaiIngredients(dish)
+            "Papad Counter" -> papadIngredients(dish)
+            "Salad" -> saladIngredients(dish)
+            "Chutneys" -> chutneyIngredients(dish)
+            "Chicken - Gravy" -> chickenGravyIngredients(dish)
+            "Non Veg Snacks - Dry" -> nonVegSnackIngredients(dish)
+            "Mutton" -> muttonIngredients(dish)
+            "Fish" -> fishIngredients(dish)
+            "Non Veg Biryani" -> nonVegBiryaniIngredients(dish)
+            "Non Veg Tandoor" -> nonVegTandoorIngredients(dish)
+            "Ice Cream" -> iceCreamIngredients(dish)
+            "Kulfi" -> kulfiIngredients(dish)
+            "Water" -> waterIngredients(dish)
+            "Pan Counter" -> panIngredients(dish)
+            else -> emptyList()
+        }
+    }
+
+    private fun i(dishId: Int, name: String, qty: Double, unit: UnitType): Ingredient {
+        return Ingredient(dishId, name, qty, unit)
+    }
+
+    private fun welcomeDrinkIngredients(dish: Dish): List<Ingredient> {
+        val name = dish.name.lowercase()
+        return when {
+            name.contains("coffee") -> listOf(
+                i(dish.id, "Milk", 160.0, UnitType.ML),
+                i(dish.id, "Coffee Powder", 2.5, UnitType.GRAM),
+                i(dish.id, "Sugar", 8.0, UnitType.GRAM),
+            )
+            name.contains("lassi") || name.contains("chaas") || name.contains("jal jeera") -> listOf(
+                i(dish.id, "Curd", 120.0, UnitType.GRAM),
+                i(dish.id, "Water", 90.0, UnitType.ML),
+                i(dish.id, "Spice Mix", 2.0, UnitType.GRAM),
+            )
+            name.contains("cold drinks") -> listOf(
+                i(dish.id, "Soft Drink", 250.0, UnitType.ML),
+                i(dish.id, "Ice", 40.0, UnitType.GRAM),
+            )
+            name.contains("gola") -> listOf(
+                i(dish.id, "Ice", 200.0, UnitType.GRAM),
+                i(dish.id, "Flavoured Syrup", 25.0, UnitType.ML),
+            )
+            name.contains("milk") || name.contains("shake") -> listOf(
+                i(dish.id, "Milk", 180.0, UnitType.ML),
+                i(dish.id, "Sugar", 10.0, UnitType.GRAM),
+                i(dish.id, "Fruit Pulp", 60.0, UnitType.GRAM),
+            )
+            name.contains("juice") || name.contains("punch") -> listOf(
+                i(dish.id, "Fruit Pulp", 140.0, UnitType.GRAM),
+                i(dish.id, "Water", 70.0, UnitType.ML),
+                i(dish.id, "Sugar", 8.0, UnitType.GRAM),
+            )
+            else -> listOf(
+                i(dish.id, "Fruit Syrup", 25.0, UnitType.ML),
+                i(dish.id, "Soda", 180.0, UnitType.ML),
+                i(dish.id, "Lemon", 5.0, UnitType.GRAM),
+            )
+        }
+    }
+
+    private fun namkeenIngredients(dish: Dish): List<Ingredient> {
+        val name = dish.name.lowercase()
+        return when {
+            name.contains("kachori") -> listOf(
+                i(dish.id, "Maida", 50.0, UnitType.GRAM),
+                i(dish.id, "Stuffing Mix", 30.0, UnitType.GRAM),
+                i(dish.id, "Oil", 12.0, UnitType.ML),
+            )
+            name.contains("cheese") -> listOf(
+                i(dish.id, "Potato", 60.0, UnitType.GRAM),
+                i(dish.id, "Cheese", 25.0, UnitType.GRAM),
+                i(dish.id, "Breadcrumbs", 15.0, UnitType.GRAM),
+                i(dish.id, "Oil", 10.0, UnitType.ML),
+            )
+            name.contains("paneer") -> listOf(
+                i(dish.id, "Paneer", 80.0, UnitType.GRAM),
+                i(dish.id, "Besan", 20.0, UnitType.GRAM),
+                i(dish.id, "Spice Mix", 3.0, UnitType.GRAM),
+                i(dish.id, "Oil", 10.0, UnitType.ML),
+            )
+            name.contains("corn") -> listOf(
+                i(dish.id, "Corn", 70.0, UnitType.GRAM),
+                i(dish.id, "Besan", 18.0, UnitType.GRAM),
+                i(dish.id, "Spice Mix", 3.0, UnitType.GRAM),
+                i(dish.id, "Oil", 10.0, UnitType.ML),
+            )
+            else -> listOf(
+                i(dish.id, "Veg Mix", 80.0, UnitType.GRAM),
+                i(dish.id, "Besan", 20.0, UnitType.GRAM),
+                i(dish.id, "Spice Mix", 3.0, UnitType.GRAM),
+                i(dish.id, "Oil", 10.0, UnitType.ML),
+            )
+        }
+    }
+
+    private fun sweetIngredients(dish: Dish): List<Ingredient> {
+        val name = dish.name.lowercase()
+        return if (name.contains("jalebi")) {
+            listOf(
+                i(dish.id, "Maida", 25.0, UnitType.GRAM),
+                i(dish.id, "Sugar", 20.0, UnitType.GRAM),
+                i(dish.id, "Ghee", 6.0, UnitType.ML),
+            )
+        } else {
+            listOf(
+                i(dish.id, "Khoya", 30.0, UnitType.GRAM),
+                i(dish.id, "Sugar", 14.0, UnitType.GRAM),
+                i(dish.id, "Nuts", 4.0, UnitType.GRAM),
+            )
+        }
+    }
+
+    private fun snackIngredients(dish: Dish): List<Ingredient> {
+        val name = dish.name.lowercase()
+        return when {
+            name.contains("golgappa") || name.contains("puchka") -> listOf(
+                i(dish.id, "Suji Puri", 10.0, UnitType.PIECE),
+                i(dish.id, "Spiced Water", 120.0, UnitType.ML),
+                i(dish.id, "Potato", 50.0, UnitType.GRAM),
+            )
+            name.contains("vada") -> listOf(
+                i(dish.id, "Urad Dal", 35.0, UnitType.GRAM),
+                i(dish.id, "Curd", 35.0, UnitType.GRAM),
+                i(dish.id, "Chutney", 15.0, UnitType.ML),
+            )
+            name.contains("corn") -> listOf(
+                i(dish.id, "Corn", 80.0, UnitType.GRAM),
+                i(dish.id, "Butter", 5.0, UnitType.GRAM),
+                i(dish.id, "Masala", 2.0, UnitType.GRAM),
+            )
+            else -> listOf(
+                i(dish.id, "Potato", 70.0, UnitType.GRAM),
+                i(dish.id, "Curd", 30.0, UnitType.GRAM),
+                i(dish.id, "Chutney", 15.0, UnitType.ML),
+                i(dish.id, "Sev", 10.0, UnitType.GRAM),
+            )
+        }
+    }
+
+    private fun chineseIngredients(dish: Dish): List<Ingredient> {
+        val name = dish.name.lowercase()
+        return when {
+            name.contains("chowmin") || name.contains("noodle") || name.contains("momo") -> listOf(
+                i(dish.id, "Noodles", 90.0, UnitType.GRAM),
+                i(dish.id, "Cabbage", 35.0, UnitType.GRAM),
+                i(dish.id, "Carrot", 20.0, UnitType.GRAM),
+                i(dish.id, "Oil", 10.0, UnitType.ML),
+                i(dish.id, "Soy Sauce", 6.0, UnitType.ML),
+            )
+            name.contains("rice") -> listOf(
+                i(dish.id, "Rice", 90.0, UnitType.GRAM),
+                i(dish.id, "Veg Mix", 45.0, UnitType.GRAM),
+                i(dish.id, "Oil", 10.0, UnitType.ML),
+                i(dish.id, "Soy Sauce", 6.0, UnitType.ML),
+            )
+            else -> listOf(
+                i(dish.id, "Veg Mix", 80.0, UnitType.GRAM),
+                i(dish.id, "Corn Flour", 15.0, UnitType.GRAM),
+                i(dish.id, "Oil", 10.0, UnitType.ML),
+                i(dish.id, "Garlic", 4.0, UnitType.GRAM),
+                i(dish.id, "Soy Sauce", 6.0, UnitType.ML),
+            )
+        }
+    }
+
+    private fun fruitCounterIngredients(dish: Dish): List<Ingredient> {
+        return listOf(
+            i(dish.id, "Cut Fruits", 180.0, UnitType.GRAM),
+            i(dish.id, "Chaat Masala", 1.0, UnitType.GRAM),
+        )
+    }
+
+    private fun bakeryIngredients(dish: Dish): List<Ingredient> {
+        val name = dish.name.lowercase()
+        return when {
+            name.contains("pizza") -> listOf(
+                i(dish.id, "Pizza Base", 1.0, UnitType.PIECE),
+                i(dish.id, "Mozzarella", 35.0, UnitType.GRAM),
+                i(dish.id, "Pizza Sauce", 20.0, UnitType.GRAM),
+                i(dish.id, "Veg Toppings", 35.0, UnitType.GRAM),
+            )
+            name.contains("burger") -> listOf(
+                i(dish.id, "Burger Bun", 1.0, UnitType.PIECE),
+                i(dish.id, "Aloo Patty", 70.0, UnitType.GRAM),
+                i(dish.id, "Onion", 10.0, UnitType.GRAM),
+                i(dish.id, "Sauce", 10.0, UnitType.GRAM),
+            )
+            name.contains("sandwich") -> listOf(
+                i(dish.id, "Bread Slices", 2.0, UnitType.PIECE),
+                i(dish.id, "Veg Filling", 55.0, UnitType.GRAM),
+                i(dish.id, "Butter", 8.0, UnitType.GRAM),
+            )
+            else -> listOf(
+                i(dish.id, "Maida", 45.0, UnitType.GRAM),
+                i(dish.id, "Butter", 12.0, UnitType.GRAM),
+                i(dish.id, "Stuffing", 40.0, UnitType.GRAM),
+            )
+        }
+    }
+
+    private fun southIndianIngredients(dish: Dish): List<Ingredient> {
+        val name = dish.name.lowercase()
+        return when {
+            name.contains("dosa") -> listOf(
+                i(dish.id, "Dosa Batter", 220.0, UnitType.GRAM),
+                i(dish.id, "Potato Masala", 60.0, UnitType.GRAM),
+                i(dish.id, "Oil", 8.0, UnitType.ML),
+                i(dish.id, "Sambar", 90.0, UnitType.ML),
+                i(dish.id, "Coconut Chutney", 35.0, UnitType.GRAM),
+            )
+            name.contains("vada") -> listOf(
+                i(dish.id, "Urad Dal", 45.0, UnitType.GRAM),
+                i(dish.id, "Oil", 12.0, UnitType.ML),
+                i(dish.id, "Sambar", 90.0, UnitType.ML),
+                i(dish.id, "Coconut Chutney", 35.0, UnitType.GRAM),
+            )
+            else -> listOf(
+                i(dish.id, "Idli Batter", 170.0, UnitType.GRAM),
+                i(dish.id, "Sambar", 90.0, UnitType.ML),
+                i(dish.id, "Coconut Chutney", 35.0, UnitType.GRAM),
+            )
+        }
+    }
+
+    private fun daalIngredients(dish: Dish): List<Ingredient> = listOf(
+        i(dish.id, "Dal", 55.0, UnitType.GRAM),
+        i(dish.id, "Onion", 20.0, UnitType.GRAM),
+        i(dish.id, "Tomato", 22.0, UnitType.GRAM),
+        i(dish.id, "Oil", 8.0, UnitType.ML),
+        i(dish.id, "Spice Mix", 3.0, UnitType.GRAM),
+    )
+
+    private fun riceIngredients(dish: Dish): List<Ingredient> {
+        val name = dish.name.lowercase()
+        return when {
+            name.contains("biryani") -> listOf(
+                i(dish.id, "Basmati Rice", 95.0, UnitType.GRAM),
+                i(dish.id, "Veg Mix", 45.0, UnitType.GRAM),
+                i(dish.id, "Oil", 10.0, UnitType.ML),
+                i(dish.id, "Spice Mix", 3.0, UnitType.GRAM),
+            )
+            else -> listOf(
+                i(dish.id, "Rice", 90.0, UnitType.GRAM),
+                i(dish.id, "Water", 170.0, UnitType.ML),
+                i(dish.id, "Ghee", 4.0, UnitType.ML),
+                i(dish.id, "Salt", 1.0, UnitType.GRAM),
+            )
+        }
+    }
+
+    private fun soupIngredients(dish: Dish): List<Ingredient> = listOf(
+        i(dish.id, "Soup Base", 170.0, UnitType.ML),
+        i(dish.id, "Veg Stock", 90.0, UnitType.ML),
+        i(dish.id, "Corn Flour", 5.0, UnitType.GRAM),
+        i(dish.id, "Butter", 4.0, UnitType.GRAM),
+    )
+
+    private fun vegetableIngredients(dish: Dish): List<Ingredient> = listOf(
+        i(dish.id, "Veg Mix", 130.0, UnitType.GRAM),
+        i(dish.id, "Onion", 28.0, UnitType.GRAM),
+        i(dish.id, "Tomato", 24.0, UnitType.GRAM),
+        i(dish.id, "Oil", 12.0, UnitType.ML),
+        i(dish.id, "Spice Mix", 4.0, UnitType.GRAM),
+    )
+
+    private fun breadIngredients(dish: Dish): List<Ingredient> = listOf(
+        i(dish.id, "Wheat Flour", 90.0, UnitType.GRAM),
+        i(dish.id, "Oil", 4.0, UnitType.ML),
+        i(dish.id, "Salt", 1.0, UnitType.GRAM),
+    )
+
+    private fun dahiIngredients(dish: Dish): List<Ingredient> = listOf(
+        i(dish.id, "Curd", 120.0, UnitType.GRAM),
+        i(dish.id, "Boondi", 18.0, UnitType.GRAM),
+        i(dish.id, "Spice Mix", 2.0, UnitType.GRAM),
+    )
+
+    private fun rajasthaniIngredients(dish: Dish): List<Ingredient> = listOf(
+        i(dish.id, "Besan", 45.0, UnitType.GRAM),
+        i(dish.id, "Wheat Flour", 40.0, UnitType.GRAM),
+        i(dish.id, "Ghee", 7.0, UnitType.ML),
+        i(dish.id, "Spice Mix", 3.0, UnitType.GRAM),
+    )
+
+    private fun italianIngredients(dish: Dish): List<Ingredient> = listOf(
+        i(dish.id, "Pasta", 90.0, UnitType.GRAM),
+        i(dish.id, "Veg Mix", 45.0, UnitType.GRAM),
+        i(dish.id, "Cheese", 20.0, UnitType.GRAM),
+        i(dish.id, "Sauce", 35.0, UnitType.GRAM),
+    )
+
+    private fun thaiIngredients(dish: Dish): List<Ingredient> = listOf(
+        i(dish.id, "Rice/Noodles", 90.0, UnitType.GRAM),
+        i(dish.id, "Veg Mix", 55.0, UnitType.GRAM),
+        i(dish.id, "Coconut Milk", 40.0, UnitType.ML),
+        i(dish.id, "Thai Curry Paste", 8.0, UnitType.GRAM),
+    )
+
+    private fun papadIngredients(dish: Dish): List<Ingredient> = listOf(
+        i(dish.id, "Papad", 2.0, UnitType.PIECE),
+        i(dish.id, "Oil", 4.0, UnitType.ML),
+        i(dish.id, "Masala", 1.5, UnitType.GRAM),
+    )
+
+    private fun saladIngredients(dish: Dish): List<Ingredient> = listOf(
+        i(dish.id, "Salad Veg", 120.0, UnitType.GRAM),
+        i(dish.id, "Lemon Dressing", 10.0, UnitType.ML),
+    )
+
+    private fun chutneyIngredients(dish: Dish): List<Ingredient> = listOf(
+        i(dish.id, "Base Ingredient", 25.0, UnitType.GRAM),
+        i(dish.id, "Green Chilli", 2.0, UnitType.GRAM),
+        i(dish.id, "Salt", 1.0, UnitType.GRAM),
+    )
+
+    private fun chickenGravyIngredients(dish: Dish): List<Ingredient> = listOf(
+        i(dish.id, "Chicken", 220.0, UnitType.GRAM),
+        i(dish.id, "Onion", 45.0, UnitType.GRAM),
+        i(dish.id, "Tomato", 35.0, UnitType.GRAM),
+        i(dish.id, "Oil", 14.0, UnitType.ML),
+        i(dish.id, "Spice Mix", 4.0, UnitType.GRAM),
+    )
+
+    private fun nonVegSnackIngredients(dish: Dish): List<Ingredient> = listOf(
+        i(dish.id, "Chicken", 150.0, UnitType.GRAM),
+        i(dish.id, "Corn Flour", 18.0, UnitType.GRAM),
+        i(dish.id, "Oil", 12.0, UnitType.ML),
+        i(dish.id, "Garlic", 4.0, UnitType.GRAM),
+    )
+
+    private fun muttonIngredients(dish: Dish): List<Ingredient> = listOf(
+        i(dish.id, "Mutton", 220.0, UnitType.GRAM),
+        i(dish.id, "Onion", 50.0, UnitType.GRAM),
+        i(dish.id, "Tomato", 30.0, UnitType.GRAM),
+        i(dish.id, "Oil", 18.0, UnitType.ML),
+        i(dish.id, "Spice Mix", 5.0, UnitType.GRAM),
+    )
+
+    private fun fishIngredients(dish: Dish): List<Ingredient> = listOf(
+        i(dish.id, "Fish", 180.0, UnitType.GRAM),
+        i(dish.id, "Mustard Paste", 12.0, UnitType.GRAM),
+        i(dish.id, "Onion", 20.0, UnitType.GRAM),
+        i(dish.id, "Oil", 12.0, UnitType.ML),
+        i(dish.id, "Spice Mix", 3.0, UnitType.GRAM),
+    )
+
+    private fun nonVegBiryaniIngredients(dish: Dish): List<Ingredient> = listOf(
+        i(dish.id, "Basmati Rice", 110.0, UnitType.GRAM),
+        i(dish.id, "Chicken/Mutton", 170.0, UnitType.GRAM),
+        i(dish.id, "Onion", 30.0, UnitType.GRAM),
+        i(dish.id, "Oil", 12.0, UnitType.ML),
+        i(dish.id, "Spice Mix", 4.0, UnitType.GRAM),
+    )
+
+    private fun nonVegTandoorIngredients(dish: Dish): List<Ingredient> = listOf(
+        i(dish.id, "Chicken/Mutton", 160.0, UnitType.GRAM),
+        i(dish.id, "Curd", 30.0, UnitType.GRAM),
+        i(dish.id, "Ginger Garlic Paste", 8.0, UnitType.GRAM),
+        i(dish.id, "Spice Mix", 4.0, UnitType.GRAM),
+        i(dish.id, "Oil", 8.0, UnitType.ML),
+    )
+
+    private fun iceCreamIngredients(dish: Dish): List<Ingredient> = listOf(
+        i(dish.id, "Ice Cream", 120.0, UnitType.GRAM),
+    )
+
+    private fun kulfiIngredients(dish: Dish): List<Ingredient> = listOf(
+        i(dish.id, "Kulfi", 1.0, UnitType.PIECE),
+    )
+
+    private fun waterIngredients(dish: Dish): List<Ingredient> = listOf(
+        i(dish.id, "Water", 250.0, UnitType.ML),
+    )
+
+    private fun panIngredients(dish: Dish): List<Ingredient> = listOf(
+        i(dish.id, "Pan Leaf", 1.0, UnitType.PIECE),
+        i(dish.id, "Pan Masala", 8.0, UnitType.GRAM),
     )
 
     override fun getDishes(): List<Dish> = dishes
