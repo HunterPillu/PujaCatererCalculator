@@ -7,7 +7,7 @@ enum class UnitType {
 }
 
 data class Ingredient(
-    val dishId: String,
+    val dishId: Int,
     val name: String,
     val perPersonQty: Double,
     val unit: UnitType,

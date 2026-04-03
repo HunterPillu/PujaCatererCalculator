@@ -7,7 +7,7 @@ import kotlin.math.round
 
 class CalculateIngredientsUseCase {
     operator fun invoke(
-        selectedDishIds: Set<String>,
+        selectedDishIds: Set<Int>,
         peopleCount: Int,
         allIngredients: List<Ingredient>,
     ): List<CalculatedIngredient> {

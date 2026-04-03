@@ -27,7 +27,7 @@ import com.caterer.puja.viewmodel.MainUiState
 fun CateringCalculatorScreen(
     state: MainUiState,
     onPeopleInputChange: (String) -> Unit,
-    onToggleDish: (String) -> Unit,
+    onToggleDish: (Int) -> Unit,
     onCalculate: () -> Unit,
 ) {
     Column(

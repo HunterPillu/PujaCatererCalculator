@@ -23,7 +23,7 @@ class MainViewModel(
         )
     }
 
-    fun toggleDish(dishId: String) {
+    fun toggleDish(dishId: Int) {
         val selected = uiState.selectedDishIds.toMutableSet()
         if (!selected.add(dishId)) {
             selected.remove(dishId)
