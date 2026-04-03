@@ -1,5 +1,13 @@
 package com.caterer.puja.ui
 
+import androidx.compose.animation.AnimatedVisibility
+import androidx.compose.animation.Crossfade
+import androidx.compose.animation.animateContentSize
+import androidx.compose.animation.expandVertically
+import androidx.compose.animation.fadeIn
+import androidx.compose.animation.fadeOut
+import androidx.compose.animation.shrinkVertically
+import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -28,6 +36,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.mutableStateMapOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.runtime.key
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
@@ -91,14 +100,6 @@ fun CateringCalculatorScreen(
         )
     }
 
-    if (showResultScreen) {
-        ResultScreen(
-            results = state.results,
-            onBackToEdit = { showResultScreen = false },
-        )
-        return
-    }
-
     Scaffold(
         bottomBar = {
             Surface(shadowElevation = 4.dp) {
@@ -119,140 +120,187 @@ fun CateringCalculatorScreen(
             }
         },
     ) { contentPadding ->
-        Column(
+        Crossfade(
+            targetState = showResultScreen,
             modifier = Modifier
                 .fillMaxSize()
-                .verticalScroll(rememberScrollState())
-                .padding(contentPadding)
-                .padding(16.dp),
-        ) {
-            Text(
-                text = "Catering Calculator",
-                fontSize = 28.sp,
-                fontWeight = FontWeight.Bold,
-            )
-
-            Spacer(modifier = Modifier.height(16.dp))
-
-            OutlinedTextField(
-                value = state.peopleInput,
-                onValueChange = onPeopleInputChange,
-                label = { Text("Number of people") },
-                modifier = Modifier.fillMaxWidth(),
-                singleLine = true,
-            )
-
-            Spacer(modifier = Modifier.height(16.dp))
-
-            OutlinedTextField(
-                value = searchQuery,
-                onValueChange = { searchQuery = it },
-                label = { Text("Search dish") },
-                modifier = Modifier.fillMaxWidth(),
-                singleLine = true,
-            )
-
-            Spacer(modifier = Modifier.height(16.dp))
-
-            Text(
-                text = "Selected dishes: ${selectedDishes.size}",
-                fontSize = 18.sp,
-                fontWeight = FontWeight.SemiBold,
-            )
-
-            if (selectedDishes.isNotEmpty()) {
-                Spacer(modifier = Modifier.height(8.dp))
-                Row(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .horizontalScroll(rememberScrollState()),
-                ) {
-                    selectedDishes.sortedBy { it.name }.forEach { dish ->
-                        Surface(
-                            shape = RoundedCornerShape(16.dp),
-                            color = MaterialTheme.colorScheme.secondaryContainer,
-                            modifier = Modifier
-                                .padding(end = 8.dp, bottom = 4.dp)
-                                .wrapContentWidth(),
-                        ) {
-                            Text(
-                                text = dish.name,
-                                modifier = Modifier.padding(horizontal = 12.dp, vertical = 6.dp),
-                                fontSize = 14.sp,
-                            )
-                        }
-                    }
-                }
-            }
-
-            Spacer(modifier = Modifier.height(16.dp))
-
-            Text(
-                text = "Select dishes",
-                fontSize = 20.sp,
-                fontWeight = FontWeight.SemiBold,
-            )
-
-            Spacer(modifier = Modifier.height(8.dp))
-
-            if (filteredDishes.isEmpty()) {
-                Text(
-                    text = "No dish found",
-                    fontSize = 16.sp,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                .padding(contentPadding),
+        ) { isResultVisible ->
+            if (isResultVisible) {
+                ResultScreen(
+                    results = state.results,
+                    onBackToEdit = { showResultScreen = false },
                 )
-            }
-
-            dishesByCategory.forEach { (category, dishesInCategory) ->
-                val isExpanded = expandedByCategory.getOrPut(category) { true }
-
-                Row(
+            } else {
+                Column(
                     modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(vertical = 6.dp)
-                        .clickable { expandedByCategory[category] = !isExpanded },
-                    horizontalArrangement = Arrangement.SpaceBetween,
-                    verticalAlignment = Alignment.CenterVertically,
+                        .fillMaxSize()
+                        .verticalScroll(rememberScrollState())
+                        .padding(16.dp),
                 ) {
                     Text(
-                        text = category,
+                        text = "Catering Calculator",
+                        fontSize = 28.sp,
+                        fontWeight = FontWeight.Bold,
+                    )
+
+                    Spacer(modifier = Modifier.height(16.dp))
+
+                    OutlinedTextField(
+                        value = state.peopleInput,
+                        onValueChange = onPeopleInputChange,
+                        label = { Text("Number of people") },
+                        modifier = Modifier.fillMaxWidth(),
+                        singleLine = true,
+                    )
+
+                    Spacer(modifier = Modifier.height(16.dp))
+
+                    OutlinedTextField(
+                        value = searchQuery,
+                        onValueChange = { searchQuery = it },
+                        label = { Text("Search dish") },
+                        modifier = Modifier.fillMaxWidth(),
+                        singleLine = true,
+                    )
+
+                    Spacer(modifier = Modifier.height(16.dp))
+
+                    Text(
+                        text = "Selected dishes: ${selectedDishes.size}",
                         fontSize = 18.sp,
                         fontWeight = FontWeight.SemiBold,
                     )
-                    Text(text = if (isExpanded) "-" else "+", fontSize = 20.sp)
-                }
 
-                if (isExpanded) {
-                    dishesInCategory.forEach { dish ->
+                    AnimatedVisibility(
+                        visible = selectedDishes.isNotEmpty(),
+                        enter = fadeIn(),
+                        exit = fadeOut(),
+                    ) {
                         Row(
-                            modifier = Modifier.fillMaxWidth(),
-                            verticalAlignment = Alignment.CenterVertically,
-                            horizontalArrangement = Arrangement.SpaceBetween,
+                            modifier = Modifier
+                                .padding(top = 8.dp)
+                                .fillMaxWidth()
+                                .horizontalScroll(rememberScrollState()),
                         ) {
-                            Text(
-                                text = dish.name,
-                                fontSize = 16.sp,
-                                modifier = Modifier.weight(1f),
-                            )
-                            Checkbox(
-                                checked = dish.id in state.selectedDishIds,
-                                onCheckedChange = { onToggleDish(dish.id) },
-                            )
+                            selectedDishes.sortedBy { it.name }.forEach { dish ->
+                                key(dish.id) {
+                                    AnimatedVisibility(
+                                        visible = true,
+                                        enter = fadeIn(),
+                                        exit = fadeOut(),
+                                    ) {
+                                        Surface(
+                                            shape = RoundedCornerShape(16.dp),
+                                            color = MaterialTheme.colorScheme.secondaryContainer,
+                                            modifier = Modifier
+                                                .padding(end = 8.dp, bottom = 4.dp)
+                                                .wrapContentWidth(),
+                                        ) {
+                                            Text(
+                                                text = dish.name,
+                                                modifier = Modifier.padding(horizontal = 12.dp, vertical = 6.dp),
+                                                fontSize = 14.sp,
+                                            )
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
+                    
+
+                    Spacer(modifier = Modifier.height(16.dp))
+
+                    Text(
+                        text = "Select dishes",
+                        fontSize = 20.sp,
+                        fontWeight = FontWeight.SemiBold,
+                    )
+
+                    Spacer(modifier = Modifier.height(8.dp))
+
+                    if (filteredDishes.isEmpty()) {
+                        Text(
+                            text = "No dish found",
+                            fontSize = 16.sp,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        )
+                    }
+
+                    dishesByCategory.forEach { (category, dishesInCategory) ->
+                        val isExpanded = expandedByCategory.getOrPut(category) { true }
+                        val chevronRotation by animateFloatAsState(if (isExpanded) 180f else 0f)
+
+                        Surface(
+                            shape = RoundedCornerShape(14.dp),
+                            color = MaterialTheme.colorScheme.surfaceVariant,
+                            modifier = Modifier
+                                .padding(vertical = 6.dp)
+                                .fillMaxWidth()
+                                .animateContentSize(),
+                        ) {
+                            Column(modifier = Modifier.padding(horizontal = 12.dp, vertical = 8.dp)) {
+                                Row(
+                                    modifier = Modifier
+                                        .fillMaxWidth()
+                                        .clickable { expandedByCategory[category] = !isExpanded },
+                                    horizontalArrangement = Arrangement.SpaceBetween,
+                                    verticalAlignment = Alignment.CenterVertically,
+                                ) {
+                                    Text(
+                                        text = category,
+                                        fontSize = 18.sp,
+                                        fontWeight = FontWeight.SemiBold,
+                                    )
+                                    Text(
+                                        text = if (isExpanded) "v" else ">",
+                                        fontSize = 18.sp,
+                                        modifier = Modifier.padding(end = (chevronRotation / 90f).dp),
+                                    )
+                                }
+
+                                AnimatedVisibility(
+                                    visible = isExpanded,
+                                    enter = expandVertically() + fadeIn(),
+                                    exit = shrinkVertically() + fadeOut(),
+                                ) {
+                                    Column {
+                                        dishesInCategory.forEach { dish ->
+                                            Row(
+                                                modifier = Modifier.fillMaxWidth(),
+                                                verticalAlignment = Alignment.CenterVertically,
+                                                horizontalArrangement = Arrangement.SpaceBetween,
+                                            ) {
+                                                Text(
+                                                    text = dish.name,
+                                                    fontSize = 16.sp,
+                                                    modifier = Modifier.weight(1f),
+                                                )
+                                                Checkbox(
+                                                    checked = dish.id in state.selectedDishIds,
+                                                    onCheckedChange = { onToggleDish(dish.id) },
+                                                )
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    state.errorMessage?.let { message ->
+                        Spacer(modifier = Modifier.height(12.dp))
+                        Text(
+                            text = message,
+                            color = MaterialTheme.colorScheme.error,
+                            fontSize = 16.sp,
+                        )
+                    }
+
+                    Spacer(modifier = Modifier.height(80.dp))
                 }
             }
-
-            state.errorMessage?.let { message ->
-                Spacer(modifier = Modifier.height(12.dp))
-                Text(
-                    text = message,
-                    color = MaterialTheme.colorScheme.error,
-                    fontSize = 16.sp,
-                )
-            }
-
-            Spacer(modifier = Modifier.height(80.dp))
         }
     }
 }
