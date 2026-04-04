@@ -20,6 +20,7 @@ interface IngredientDao {
 interface MappingDao {
     suspend fun insertMappings(list: List<DishIngredientMapEntity>)
     suspend fun getByDish(dishId: String): List<DishIngredientMapEntity>
+    suspend fun getAllMappings(): List<DishIngredientMapEntity>
 }
 
 interface EventDao {
@@ -141,6 +142,18 @@ class SqlDelightMappingDao(
             )
         }
     }
+
+    override suspend fun getAllMappings(): List<DishIngredientMapEntity> {
+        return database.appDatabaseQueries.selectAllMappings().executeAsList().map { row ->
+            DishIngredientMapEntity(
+                dishId = row.dishId,
+                ingredientId = row.ingredientId,
+                quantityPerPerson = row.quantityPerPerson,
+                unit = row.unit,
+                consumptionRate = row.consumptionRate,
+            )
+        }
+    }
 }
 
 class SqlDelightEventDao(
@@ -168,5 +181,3 @@ class SqlDelightEventDao(
         }
     }
 }
-
-

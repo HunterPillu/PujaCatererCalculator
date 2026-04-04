@@ -1,7 +1,9 @@
 package com.caterer.puja.data.seed
 
+import com.caterer.puja.data.db.AppDatabaseStore
 import com.caterer.puja.data.db.DatabaseSetup
 import com.caterer.puja.data.db.entity.DishEntity
+import com.caterer.puja.data.db.entity.DishIngredientMapEntity
 import com.caterer.puja.data.db.entity.IngredientEntity
 import com.caterer.puja.resources.Res
 import kotlinx.serialization.json.Json
@@ -26,8 +28,7 @@ object DatabaseSeeder {
         val store = DatabaseSetup.createStore(platformContext)
         val hasDishes = store.dishDao().getAllDishes().isNotEmpty()
         val hasIngredients = store.ingredientDao().getAll().isNotEmpty()
-
-        if (hasDishes && hasIngredients) return
+        val hasMappings = store.mappingDao().getAllMappings().isNotEmpty()
 
         if (!hasDishes) {
             store.dishDao().insertDishes(parseDishes(readSeedFile(DISHES_FILE)))
@@ -41,6 +42,91 @@ object DatabaseSeeder {
 
             store.ingredientDao().insertIngredients(ingredients)
         }
+
+        if (!hasMappings) {
+            seedLegacyMappings(store)
+        }
+    }
+
+    // Build a practical default mapping set from seeded DB dishes + seeded DB ingredients.
+    private suspend fun seedLegacyMappings(store: AppDatabaseStore) {
+        val dishes = store.dishDao().getAllDishes()
+        val ingredientsById = store.ingredientDao().getAll().associateBy { it.id }
+        val mappings = mutableListOf<DishIngredientMapEntity>()
+
+        dishes.forEach { dish ->
+            mappings += defaultMappingsForDish(dish, ingredientsById)
+        }
+
+        if (mappings.isNotEmpty()) {
+            store.mappingDao().insertMappings(
+                mappings
+                    .distinctBy { it.dishId to it.ingredientId }
+                    .filter { it.quantityPerPerson > 0.0 },
+            )
+        }
+    }
+
+    private fun defaultMappingsForDish(
+        dish: DishEntity,
+        ingredientsById: Map<String, IngredientEntity>,
+    ): List<DishIngredientMapEntity> {
+        val result = mutableListOf<DishIngredientMapEntity>()
+        val name = dish.defaultName.lowercase()
+        val category = dish.category.lowercase()
+
+        fun addIfPresent(ingredientId: String, qty: Double, unit: String, rate: Double = 1.0) {
+            if (ingredientsById.containsKey(ingredientId)) {
+                result += DishIngredientMapEntity(
+                    dishId = dish.id,
+                    ingredientId = ingredientId,
+                    quantityPerPerson = qty,
+                    unit = unit,
+                    consumptionRate = rate,
+                )
+            }
+        }
+
+        val isRiceDish = category.contains("rice") || name.contains("biryani") || name.contains("pulao")
+        val isBreadDish = category.contains("bread") || name.contains("roti") || name.contains("paratha") || name.contains("kulcha")
+        val isDalDish = category.contains("daal") || name.contains("dal")
+        val isDrinkDish = category.contains("drink") || name.contains("shake") || name.contains("juice") || name.contains("coffee")
+        val isSweetDish = category.contains("sweet") || name.contains("halwa") || name.contains("jalebi") || name.contains("rabri")
+
+        if (isRiceDish) {
+            addIfPresent("ING_INDIAGATE_RICE", 90.0, "g")
+            addIfPresent("ING_REFINED_OIL", 5.0, "ml")
+            addIfPresent("ING_TATA_NAMAK", 1.0, "g")
+            addIfPresent("ING_GOTA_JEERA", 1.0, "g", rate = if (name.contains("jeera")) 1.0 else 0.4)
+        } else if (isBreadDish) {
+            addIfPresent("ING_ATTA_SHAKTIBHOG", 80.0, "g")
+            addIfPresent("ING_REFINED_OIL", 3.0, "ml")
+            addIfPresent("ING_TATA_NAMAK", 1.0, "g")
+        } else if (isDalDish) {
+            addIfPresent("ING_KALA_URAD", 45.0, "g")
+            addIfPresent("ING_ONION", 20.0, "g")
+            addIfPresent("ING_TOMATO", 25.0, "g")
+            addIfPresent("ING_REFINED_OIL", 8.0, "ml")
+        } else if (isDrinkDish) {
+            addIfPresent("ING_MILK", 140.0, "ml")
+            addIfPresent("ING_SUGAR", 10.0, "g")
+            addIfPresent("ING_ICE", 40.0, "g")
+        } else if (isSweetDish) {
+            addIfPresent("ING_SUGAR", 18.0, "g")
+            addIfPresent("ING_KHOA", 25.0, "g")
+            addIfPresent("ING_DESI_GHEE", 5.0, "g")
+        } else {
+            addIfPresent("ING_ONION", 25.0, "g")
+            addIfPresent("ING_TOMATO", 20.0, "g")
+            addIfPresent("ING_REFINED_OIL", 8.0, "ml")
+            addIfPresent("ING_TATA_NAMAK", 1.0, "g")
+        }
+
+        if (result.isEmpty()) {
+            addIfPresent("ING_REFINED_OIL", 5.0, "ml")
+        }
+
+        return result
     }
 
     private fun parseDishes(raw: String): List<DishEntity> {

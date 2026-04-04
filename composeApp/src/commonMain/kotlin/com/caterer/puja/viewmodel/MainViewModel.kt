@@ -4,17 +4,29 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import com.caterer.puja.data.repo.CateringRepository
-import com.caterer.puja.data.repo.InMemoryCateringRepository
 import com.caterer.puja.domain.usecase.CalculateIngredientsUseCase
 
 class MainViewModel(
-    private val repository: CateringRepository = InMemoryCateringRepository(),
+    private val repository: CateringRepository,
     private val calculateIngredients: CalculateIngredientsUseCase = CalculateIngredientsUseCase(),
 ) {
-    var uiState by mutableStateOf(
-        MainUiState(dishes = repository.getDishes()),
-    )
+    var uiState by mutableStateOf(MainUiState())
         private set
+
+    init {
+        reloadData()
+    }
+
+    fun reloadData() {
+        val selectedDishIds = uiState.selectedDishIds
+        val dishes = repository.getDishes()
+        val validSelection = selectedDishIds.intersect(dishes.map { it.id }.toSet())
+
+        uiState = uiState.copy(
+            dishes = dishes,
+            selectedDishIds = validSelection,
+        )
+    }
 
     fun updatePeopleInput(value: String) {
         uiState = uiState.copy(
@@ -66,4 +78,3 @@ class MainViewModel(
         return "$header\n$body"
     }
 }
-

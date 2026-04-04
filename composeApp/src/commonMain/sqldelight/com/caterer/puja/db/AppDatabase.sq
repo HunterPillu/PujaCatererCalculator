@@ -108,6 +108,10 @@ SELECT *
 FROM dish_ingredient_map
 WHERE dishId = ?;
 
+selectAllMappings:
+SELECT *
+FROM dish_ingredient_map;
+
 insertEvent:
 INSERT INTO events(name, peopleCount, isBuffet, eventType, bufferPercent)
 VALUES (?, ?, ?, ?, ?);
