@@ -1,10 +1,133 @@
-CREATE TABLE AppMeta (
-    id INTEGER NOT NULL PRIMARY KEY,
-    key TEXT NOT NULL,
-    value TEXT NOT NULL
+CREATE TABLE dishes (
+    id TEXT NOT NULL PRIMARY KEY,
+    defaultName TEXT NOT NULL,
+    category TEXT NOT NULL,
+    isVeg INTEGER NOT NULL,
+    isMainCourse INTEGER NOT NULL
 );
 
-selectAllMeta:
+CREATE TABLE dish_localized_names (
+    dishId TEXT NOT NULL,
+    languageCode TEXT NOT NULL,
+    displayName TEXT NOT NULL,
+    PRIMARY KEY (dishId, languageCode),
+    FOREIGN KEY (dishId) REFERENCES dishes(id) ON DELETE CASCADE
+);
+
+CREATE TABLE ingredients (
+    id TEXT NOT NULL PRIMARY KEY,
+    defaultName TEXT NOT NULL,
+    category TEXT NOT NULL,
+    unit TEXT NOT NULL
+);
+
+CREATE TABLE ingredient_localized_names (
+    ingredientId TEXT NOT NULL,
+    languageCode TEXT NOT NULL,
+    displayName TEXT NOT NULL,
+    PRIMARY KEY (ingredientId, languageCode),
+    FOREIGN KEY (ingredientId) REFERENCES ingredients(id) ON DELETE CASCADE
+);
+
+CREATE TABLE dish_ingredient_map (
+    dishId TEXT NOT NULL,
+    ingredientId TEXT NOT NULL,
+    quantityPerPerson REAL NOT NULL,
+    unit TEXT NOT NULL,
+    consumptionRate REAL NOT NULL,
+    PRIMARY KEY (dishId, ingredientId),
+    FOREIGN KEY (dishId) REFERENCES dishes(id) ON DELETE CASCADE,
+    FOREIGN KEY (ingredientId) REFERENCES ingredients(id) ON DELETE CASCADE
+);
+
+CREATE TABLE events (
+    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    peopleCount INTEGER NOT NULL,
+    isBuffet INTEGER NOT NULL,
+    eventType TEXT NOT NULL,
+    bufferPercent REAL NOT NULL
+);
+
+CREATE TABLE event_dishes (
+    eventId INTEGER NOT NULL,
+    dishId TEXT NOT NULL,
+    PRIMARY KEY (eventId, dishId),
+    FOREIGN KEY (eventId) REFERENCES events(id) ON DELETE CASCADE,
+    FOREIGN KEY (dishId) REFERENCES dishes(id) ON DELETE CASCADE
+);
+
+insertDish:
+INSERT OR REPLACE INTO dishes(id, defaultName, category, isVeg, isMainCourse)
+VALUES (?, ?, ?, ?, ?);
+
+insertDishLocalizedName:
+INSERT OR REPLACE INTO dish_localized_names(dishId, languageCode, displayName)
+VALUES (?, ?, ?);
+
+deleteDishLocalizedNamesByDishId:
+DELETE FROM dish_localized_names
+WHERE dishId = ?;
+
+selectDishLocalizedNamesByDishId:
 SELECT *
-FROM AppMeta;
+FROM dish_localized_names
+WHERE dishId = ?;
+
+selectAllDishes:
+SELECT *
+FROM dishes;
+
+insertIngredient:
+INSERT OR REPLACE INTO ingredients(id, defaultName, category, unit)
+VALUES (?, ?, ?, ?);
+
+selectAllIngredients:
+SELECT *
+FROM ingredients;
+
+insertIngredientLocalizedName:
+INSERT OR REPLACE INTO ingredient_localized_names(ingredientId, languageCode, displayName)
+VALUES (?, ?, ?);
+
+deleteIngredientLocalizedNamesByIngredientId:
+DELETE FROM ingredient_localized_names
+WHERE ingredientId = ?;
+
+selectIngredientLocalizedNamesByIngredientId:
+SELECT *
+FROM ingredient_localized_names
+WHERE ingredientId = ?;
+
+insertDishIngredientMapping:
+INSERT OR REPLACE INTO dish_ingredient_map(dishId, ingredientId, quantityPerPerson, unit, consumptionRate)
+VALUES (?, ?, ?, ?, ?);
+
+selectMappingsByDishId:
+SELECT *
+FROM dish_ingredient_map
+WHERE dishId = ?;
+
+insertEvent:
+INSERT INTO events(name, peopleCount, isBuffet, eventType, bufferPercent)
+VALUES (?, ?, ?, ?, ?);
+
+selectLastInsertedEventId:
+SELECT last_insert_rowid();
+
+insertEventDish:
+INSERT OR REPLACE INTO event_dishes(eventId, dishId)
+VALUES (?, ?);
+
+selectIngredientsForDish:
+SELECT i.*
+FROM ingredients i
+INNER JOIN dish_ingredient_map m ON m.ingredientId = i.id
+WHERE m.dishId = ?;
+
+selectDishesForEvent:
+SELECT d.*
+FROM dishes d
+INNER JOIN event_dishes ed ON ed.dishId = d.id
+WHERE ed.eventId = ?;
 

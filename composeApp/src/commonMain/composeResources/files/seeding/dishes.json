@@ -1,0 +1,3032 @@
+[
+  {
+    "id": "DISH_MOKTAILS_1",
+    "defaultName": "Moktails",
+    "localizedNames": {
+      "hi": "Moktails"
+    },
+    "category": "Welcome Drinks",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_VICTORIA_COUNTER_2",
+    "defaultName": "Victoria Counter",
+    "localizedNames": {
+      "hi": "Victoria Counter"
+    },
+    "category": "Welcome Drinks",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_FRESH_JUICE_3",
+    "defaultName": "Fresh Juice",
+    "localizedNames": {
+      "hi": "Fresh Juice"
+    },
+    "category": "Welcome Drinks",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_COLD_DRINKS_4",
+    "defaultName": "Cold Drinks",
+    "localizedNames": {
+      "hi": "Cold Drinks"
+    },
+    "category": "Welcome Drinks",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_MILK_SHAKE_5",
+    "defaultName": "Milk Shake",
+    "localizedNames": {
+      "hi": "Milk Shake"
+    },
+    "category": "Welcome Drinks",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_SHARIFA_SHAKE_6",
+    "defaultName": "Sharifa Shake",
+    "localizedNames": {
+      "hi": "Sharifa Shake"
+    },
+    "category": "Welcome Drinks",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_CHIKU_SHAKE_7",
+    "defaultName": "Chiku Shake",
+    "localizedNames": {
+      "hi": "Chiku Shake"
+    },
+    "category": "Welcome Drinks",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_PINEAPPLE_SHAKE_8",
+    "defaultName": "Pineapple Shake",
+    "localizedNames": {
+      "hi": "Pineapple Shake"
+    },
+    "category": "Welcome Drinks",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_VANILLA_SHAKE_9",
+    "defaultName": "Vanilla Shake",
+    "localizedNames": {
+      "hi": "Vanilla Shake"
+    },
+    "category": "Welcome Drinks",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_PISTA_SHAKE_10",
+    "defaultName": "Pista Shake",
+    "localizedNames": {
+      "hi": "Pista Shake"
+    },
+    "category": "Welcome Drinks",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_STRAWBERRY_SHAKE_11",
+    "defaultName": "Strawberry Shake",
+    "localizedNames": {
+      "hi": "Strawberry Shake"
+    },
+    "category": "Welcome Drinks",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_GOLA_CHUSKI_12",
+    "defaultName": "Gola Chuski",
+    "localizedNames": {
+      "hi": "Gola Chuski"
+    },
+    "category": "Welcome Drinks",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_THANDAI_SHAKE_13",
+    "defaultName": "Thandai Shake",
+    "localizedNames": {
+      "hi": "Thandai Shake"
+    },
+    "category": "Welcome Drinks",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_JAL_JEERA_SHAKE_14",
+    "defaultName": "Jal Jeera Shake",
+    "localizedNames": {
+      "hi": "Jal Jeera Shake"
+    },
+    "category": "Welcome Drinks",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_MANGO_SHAKE_15",
+    "defaultName": "Mango Shake",
+    "localizedNames": {
+      "hi": "Mango Shake"
+    },
+    "category": "Welcome Drinks",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_JEERA_CHAAS_16",
+    "defaultName": "Jeera Chaas",
+    "localizedNames": {
+      "hi": "Jeera Chaas"
+    },
+    "category": "Welcome Drinks",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_LASSI_17",
+    "defaultName": "Lassi",
+    "localizedNames": {
+      "hi": "Lassi"
+    },
+    "category": "Welcome Drinks",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_COFFEE_18",
+    "defaultName": "Coffee",
+    "localizedNames": {
+      "hi": "Coffee"
+    },
+    "category": "Welcome Drinks",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_FRUIT_PUNCH_19",
+    "defaultName": "Fruit Punch",
+    "localizedNames": {
+      "hi": "Fruit Punch"
+    },
+    "category": "Welcome Drinks",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_HOT_KESHARIA_MILK_COUNTER_20",
+    "defaultName": "Hot Kesharia Milk Counter",
+    "localizedNames": {
+      "hi": "Hot Kesharia Milk Counter"
+    },
+    "category": "Welcome Drinks",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_HARA_BHARA_KABAB_21",
+    "defaultName": "Hara Bhara Kabab",
+    "localizedNames": {
+      "hi": "Hara Bhara Kabab"
+    },
+    "category": "Moving Items",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_VEG_BALL_22",
+    "defaultName": "Veg ball",
+    "localizedNames": {
+      "hi": "Veg ball"
+    },
+    "category": "Moving Items",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_PINEAPPLE_CHERRY_STICK_23",
+    "defaultName": "Pineapple Cherry Stick",
+    "localizedNames": {
+      "hi": "Pineapple Cherry Stick"
+    },
+    "category": "Moving Items",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_PANEER_BALL_24",
+    "defaultName": "Paneer ball",
+    "localizedNames": {
+      "hi": "Paneer ball"
+    },
+    "category": "Moving Items",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_PANEER_TIKKA_25",
+    "defaultName": "Paneer tikka",
+    "localizedNames": {
+      "hi": "Paneer tikka"
+    },
+    "category": "Moving Items",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_PANEER_FINGER_26",
+    "defaultName": "Paneer Finger",
+    "localizedNames": {
+      "hi": "Paneer Finger"
+    },
+    "category": "Moving Items",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_PANEER_SEEKH_KABAB_27",
+    "defaultName": "Paneer Seekh Kabab",
+    "localizedNames": {
+      "hi": "Paneer Seekh Kabab"
+    },
+    "category": "Moving Items",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_PANEER_ROLL_28",
+    "defaultName": "Paneer Roll",
+    "localizedNames": {
+      "hi": "Paneer Roll"
+    },
+    "category": "Moving Items",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_VEG_TIKKA_29",
+    "defaultName": "Veg Tikka",
+    "localizedNames": {
+      "hi": "Veg Tikka"
+    },
+    "category": "Moving Items",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_BABY_CORN_FINGER_30",
+    "defaultName": "Baby Corn Finger",
+    "localizedNames": {
+      "hi": "Baby Corn Finger"
+    },
+    "category": "Moving Items",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_AMERICAN_CORN_TIKKA_31",
+    "defaultName": "American Corn Tikka",
+    "localizedNames": {
+      "hi": "American Corn Tikka"
+    },
+    "category": "Moving Items",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_MATAR_TIKKA_32",
+    "defaultName": "Matar Tikka",
+    "localizedNames": {
+      "hi": "Matar Tikka"
+    },
+    "category": "Moving Items",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_VEG_LOLLY_POP_33",
+    "defaultName": "Veg Lolly Pop",
+    "localizedNames": {
+      "hi": "Veg Lolly Pop"
+    },
+    "category": "Moving Items",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_PANEER_LOLLY_POP_34",
+    "defaultName": "Paneer Lolly Pop",
+    "localizedNames": {
+      "hi": "Paneer Lolly Pop"
+    },
+    "category": "Moving Items",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_VEG_GOLD_35",
+    "defaultName": "Veg Gold",
+    "localizedNames": {
+      "hi": "Veg Gold"
+    },
+    "category": "Moving Items",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_CORN_CHEESE_TIKKA_36",
+    "defaultName": "Corn Cheese Tikka",
+    "localizedNames": {
+      "hi": "Corn Cheese Tikka"
+    },
+    "category": "Moving Items",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_HARA_CHANA_KACHORI_37",
+    "defaultName": "Hara Chana Kachori",
+    "localizedNames": {
+      "hi": "Hara Chana Kachori"
+    },
+    "category": "Moving Items",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_TANDOORI_MOM_VEG_38",
+    "defaultName": "Tandoori Mom (Veg)",
+    "localizedNames": {
+      "hi": "Tandoori Mom (Veg)"
+    },
+    "category": "Moving Items",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_PAPER_CORN_39",
+    "defaultName": "Paper Corn",
+    "localizedNames": {
+      "hi": "Paper Corn"
+    },
+    "category": "Moving Items",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_MUSHROOM_TANDOORI_40",
+    "defaultName": "Mushroom Tandoori",
+    "localizedNames": {
+      "hi": "Mushroom Tandoori"
+    },
+    "category": "Moving Items",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_SPRING_ROLL_VEG_41",
+    "defaultName": "Spring Roll (Veg)",
+    "localizedNames": {
+      "hi": "Spring Roll (Veg)"
+    },
+    "category": "Moving Items",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_PIN_WIN_POTATO_42",
+    "defaultName": "Pin Win Potato",
+    "localizedNames": {
+      "hi": "Pin Win Potato"
+    },
+    "category": "Moving Items",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_MINI_KACHORI_43",
+    "defaultName": "Mini Kachori",
+    "localizedNames": {
+      "hi": "Mini Kachori"
+    },
+    "category": "Moving Items",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_CHEESE_BALL_44",
+    "defaultName": "Cheese Ball",
+    "localizedNames": {
+      "hi": "Cheese Ball"
+    },
+    "category": "Moving Items",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_MINI_KAJU_BARFI_45",
+    "defaultName": "Mini Kaju Barfi",
+    "localizedNames": {
+      "hi": "Mini Kaju Barfi"
+    },
+    "category": "Moving Items",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_MINI_RAJ_BHOG_46",
+    "defaultName": "Mini Raj Bhog",
+    "localizedNames": {
+      "hi": "Mini Raj Bhog"
+    },
+    "category": "Moving Items",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_MINI_GULAB_JAMUN_47",
+    "defaultName": "Mini Gulab Jamun",
+    "localizedNames": {
+      "hi": "Mini Gulab Jamun"
+    },
+    "category": "Moving Items",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_MINI_KAJU_PISTA_ROLL_48",
+    "defaultName": "Mini Kaju Pista Roll",
+    "localizedNames": {
+      "hi": "Mini Kaju Pista Roll"
+    },
+    "category": "Moving Items",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_MINI_PINEAPPLE_JALEBI_49",
+    "defaultName": "Mini Pineapple Jalebi",
+    "localizedNames": {
+      "hi": "Mini Pineapple Jalebi"
+    },
+    "category": "Moving Items",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_MINI_ANGOORI_PETHA_50",
+    "defaultName": "Mini Angoori Petha",
+    "localizedNames": {
+      "hi": "Mini Angoori Petha"
+    },
+    "category": "Moving Items",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_GOLGAPPA_51",
+    "defaultName": "Golgappa",
+    "localizedNames": {
+      "hi": "Golgappa"
+    },
+    "category": "Hi-Tea",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_ALOO_TIKKI_52",
+    "defaultName": "Aloo Tikki",
+    "localizedNames": {
+      "hi": "Aloo Tikki"
+    },
+    "category": "Hi-Tea",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_MIX_CHAT_53",
+    "defaultName": "Mix Chat",
+    "localizedNames": {
+      "hi": "Mix Chat"
+    },
+    "category": "Hi-Tea",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_CHILLA_WITH_CHUTNEY_54",
+    "defaultName": "Chilla with Chutney",
+    "localizedNames": {
+      "hi": "Chilla with Chutney"
+    },
+    "category": "Hi-Tea",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_TOMATO_RAGDA_CHAT_55",
+    "defaultName": "Tomato Ragda Chat",
+    "localizedNames": {
+      "hi": "Tomato Ragda Chat"
+    },
+    "category": "Hi-Tea",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_PAPRI_CHAT_56",
+    "defaultName": "Papri Chat",
+    "localizedNames": {
+      "hi": "Papri Chat"
+    },
+    "category": "Hi-Tea",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_PALAK_CHAT_57",
+    "defaultName": "Palak Chat",
+    "localizedNames": {
+      "hi": "Palak Chat"
+    },
+    "category": "Hi-Tea",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_CHINESE_SAMOSA_58",
+    "defaultName": "Chinese Samosa",
+    "localizedNames": {
+      "hi": "Chinese Samosa"
+    },
+    "category": "Hi-Tea",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_HARA_BHARA_CHAT_59",
+    "defaultName": "Hara Bhara Chat",
+    "localizedNames": {
+      "hi": "Hara Bhara Chat"
+    },
+    "category": "Hi-Tea",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_MOTH_CHAT_60",
+    "defaultName": "Moth Chat",
+    "localizedNames": {
+      "hi": "Moth Chat"
+    },
+    "category": "Hi-Tea",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_CHINESE_CHAT_61",
+    "defaultName": "Chinese Chat",
+    "localizedNames": {
+      "hi": "Chinese Chat"
+    },
+    "category": "Hi-Tea",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_KANJI_VADA_62",
+    "defaultName": "Kanji Vada",
+    "localizedNames": {
+      "hi": "Kanji Vada"
+    },
+    "category": "Hi-Tea",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_ALU_LACHA_KACHORI_CHAT_63",
+    "defaultName": "Alu Lacha Kachori Chat",
+    "localizedNames": {
+      "hi": "Alu Lacha Kachori Chat"
+    },
+    "category": "Hi-Tea",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_PUCHKA_CHAT_GANGA_JAMUNA_64",
+    "defaultName": "Puchka Chat (Ganga Jamuna)",
+    "localizedNames": {
+      "hi": "Puchka Chat (Ganga Jamuna)"
+    },
+    "category": "Hi-Tea",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_RAJ_KACHORI_CHAT_65",
+    "defaultName": "Raj Kachori Chat",
+    "localizedNames": {
+      "hi": "Raj Kachori Chat"
+    },
+    "category": "Hi-Tea",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_TIKKI_AGRA_66",
+    "defaultName": "Tikki Agra",
+    "localizedNames": {
+      "hi": "Tikki Agra"
+    },
+    "category": "Hi-Tea",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_CORN_STUFFED_TIKKI_CHAT_67",
+    "defaultName": "Corn Stuffed Tikki Chat",
+    "localizedNames": {
+      "hi": "Corn Stuffed Tikki Chat"
+    },
+    "category": "Hi-Tea",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_LITTI_COUNTER_68",
+    "defaultName": "Litti Counter",
+    "localizedNames": {
+      "hi": "Litti Counter"
+    },
+    "category": "Hi-Tea",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_INDIAN_BHEL_CHAT_69",
+    "defaultName": "Indian Bhel Chat",
+    "localizedNames": {
+      "hi": "Indian Bhel Chat"
+    },
+    "category": "Hi-Tea",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_PANEER_ROMANIYA_CHAT_70",
+    "defaultName": "Paneer Romaniya Chat",
+    "localizedNames": {
+      "hi": "Paneer Romaniya Chat"
+    },
+    "category": "Hi-Tea",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_STEAM_CORN_71",
+    "defaultName": "Steam Corn",
+    "localizedNames": {
+      "hi": "Steam Corn"
+    },
+    "category": "Hi-Tea",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_DAHI_VADA_CHAT_72",
+    "defaultName": "Dahi Vada Chat",
+    "localizedNames": {
+      "hi": "Dahi Vada Chat"
+    },
+    "category": "Hi-Tea",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_VEG_HAKKA_CHOWMIN_73",
+    "defaultName": "Veg Hakka Chowmin",
+    "localizedNames": {
+      "hi": "Veg Hakka Chowmin"
+    },
+    "category": "Hi-Tea",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_VEG_GARLIC_MANCHURIAN_74",
+    "defaultName": "Veg Garlic Manchurian",
+    "localizedNames": {
+      "hi": "Veg Garlic Manchurian"
+    },
+    "category": "Hi-Tea",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_AMERICAN_CHOPSY_75",
+    "defaultName": "American Chopsy",
+    "localizedNames": {
+      "hi": "American Chopsy"
+    },
+    "category": "Hi-Tea",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_VEG_FRIED_RICE_76",
+    "defaultName": "Veg Fried Rice",
+    "localizedNames": {
+      "hi": "Veg Fried Rice"
+    },
+    "category": "Hi-Tea",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_PANEER_CHILLY_77",
+    "defaultName": "Paneer Chilly",
+    "localizedNames": {
+      "hi": "Paneer Chilly"
+    },
+    "category": "Hi-Tea",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_CHANA_CHILLY_78",
+    "defaultName": "Chana Chilly",
+    "localizedNames": {
+      "hi": "Chana Chilly"
+    },
+    "category": "Hi-Tea",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_MUSHROOM_CHILLY_79",
+    "defaultName": "Mushroom Chilly",
+    "localizedNames": {
+      "hi": "Mushroom Chilly"
+    },
+    "category": "Hi-Tea",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_VEG_65_80",
+    "defaultName": "Veg 65",
+    "localizedNames": {
+      "hi": "Veg 65"
+    },
+    "category": "Hi-Tea",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_BABY_CORN_CHILLY_81",
+    "defaultName": "Baby Corn Chilly",
+    "localizedNames": {
+      "hi": "Baby Corn Chilly"
+    },
+    "category": "Hi-Tea",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_GOBI_CHILLY_82",
+    "defaultName": "Gobi Chilly",
+    "localizedNames": {
+      "hi": "Gobi Chilly"
+    },
+    "category": "Hi-Tea",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_VEG_HOT__SOUR_83",
+    "defaultName": "Veg Hot & Sour",
+    "localizedNames": {
+      "hi": "Veg Hot & Sour"
+    },
+    "category": "Hi-Tea",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_POTATO_CHILLY_84",
+    "defaultName": "Potato Chilly",
+    "localizedNames": {
+      "hi": "Potato Chilly"
+    },
+    "category": "Hi-Tea",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_AMERICAN_CORN_CHILLY_85",
+    "defaultName": "American Corn Chilly",
+    "localizedNames": {
+      "hi": "American Corn Chilly"
+    },
+    "category": "Hi-Tea",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_PANEER65_86",
+    "defaultName": "Paneer-65",
+    "localizedNames": {
+      "hi": "Paneer-65"
+    },
+    "category": "Hi-Tea",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_VEG_MOMO_STEAMED_87",
+    "defaultName": "Veg Momo (Steamed)",
+    "localizedNames": {
+      "hi": "Veg Momo (Steamed)"
+    },
+    "category": "Hi-Tea",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_VEG_MOMO_FRIED_88",
+    "defaultName": "Veg Momo (Fried)",
+    "localizedNames": {
+      "hi": "Veg Momo (Fried)"
+    },
+    "category": "Hi-Tea",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_IMPORTED_FRUITS_89",
+    "defaultName": "Imported Fruits",
+    "localizedNames": {
+      "hi": "Imported Fruits"
+    },
+    "category": "Hi-Tea",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_INDIAN_FRUITS_90",
+    "defaultName": "Indian Fruits",
+    "localizedNames": {
+      "hi": "Indian Fruits"
+    },
+    "category": "Hi-Tea",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_BURGER_91",
+    "defaultName": "Burger",
+    "localizedNames": {
+      "hi": "Burger"
+    },
+    "category": "Bakery / South Indian / Daal / Rice / Soup",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_PIZZA_OF_YOUR_CHOICE_92",
+    "defaultName": "Pizza (of your choice)",
+    "localizedNames": {
+      "hi": "Pizza (of your choice)"
+    },
+    "category": "Bakery / South Indian / Daal / Rice / Soup",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_VEG_PATTIES_93",
+    "defaultName": "Veg Patties",
+    "localizedNames": {
+      "hi": "Veg Patties"
+    },
+    "category": "Bakery / South Indian / Daal / Rice / Soup",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_PANEER_PATTIES_94",
+    "defaultName": "Paneer Patties",
+    "localizedNames": {
+      "hi": "Paneer Patties"
+    },
+    "category": "Bakery / South Indian / Daal / Rice / Soup",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_PASTRY_DIFFERENT_TASTES_95",
+    "defaultName": "Pastry (different tastes)",
+    "localizedNames": {
+      "hi": "Pastry (different tastes)"
+    },
+    "category": "Bakery / South Indian / Daal / Rice / Soup",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_CHEESE_SANDWICH_96",
+    "defaultName": "Cheese Sandwich",
+    "localizedNames": {
+      "hi": "Cheese Sandwich"
+    },
+    "category": "Bakery / South Indian / Daal / Rice / Soup",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_CLUB_SANDWICH_97",
+    "defaultName": "Club Sandwich",
+    "localizedNames": {
+      "hi": "Club Sandwich"
+    },
+    "category": "Bakery / South Indian / Daal / Rice / Soup",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_VEG_SANDWICH_98",
+    "defaultName": "Veg Sandwich",
+    "localizedNames": {
+      "hi": "Veg Sandwich"
+    },
+    "category": "Bakery / South Indian / Daal / Rice / Soup",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_PLAIN_DOSA__MASALA_DOSA_99",
+    "defaultName": "Plain Dosa / Masala Dosa",
+    "localizedNames": {
+      "hi": "Plain Dosa / Masala Dosa"
+    },
+    "category": "Bakery / South Indian / Daal / Rice / Soup",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_IDLI_MINI_100",
+    "defaultName": "Idli (Mini)",
+    "localizedNames": {
+      "hi": "Idli (Mini)"
+    },
+    "category": "Bakery / South Indian / Daal / Rice / Soup",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_VADA_MINI_101",
+    "defaultName": "Vada (Mini)",
+    "localizedNames": {
+      "hi": "Vada (Mini)"
+    },
+    "category": "Bakery / South Indian / Daal / Rice / Soup",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_UTTAPAM_MINI_102",
+    "defaultName": "Uttapam (Mini)",
+    "localizedNames": {
+      "hi": "Uttapam (Mini)"
+    },
+    "category": "Bakery / South Indian / Daal / Rice / Soup",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_ONION_UTTAPAM_103",
+    "defaultName": "Onion Uttapam",
+    "localizedNames": {
+      "hi": "Onion Uttapam"
+    },
+    "category": "Bakery / South Indian / Daal / Rice / Soup",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_MIX_UTTAPAM_104",
+    "defaultName": "Mix Uttapam",
+    "localizedNames": {
+      "hi": "Mix Uttapam"
+    },
+    "category": "Bakery / South Indian / Daal / Rice / Soup",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_DAAL_MAKHANI_105",
+    "defaultName": "Daal Makhani",
+    "localizedNames": {
+      "hi": "Daal Makhani"
+    },
+    "category": "Bakery / South Indian / Daal / Rice / Soup",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_DAL_FRIED__TARKA_106",
+    "defaultName": "Dal Fried / Tarka",
+    "localizedNames": {
+      "hi": "Dal Fried / Tarka"
+    },
+    "category": "Bakery / South Indian / Daal / Rice / Soup",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_CHANA_DAL_WITH_COCONUT_107",
+    "defaultName": "Chana Dal with Coconut",
+    "localizedNames": {
+      "hi": "Chana Dal with Coconut"
+    },
+    "category": "Bakery / South Indian / Daal / Rice / Soup",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_DAAL_PANCHMELA_BUTTER_FRY_108",
+    "defaultName": "Daal Panchmela Butter Fry",
+    "localizedNames": {
+      "hi": "Daal Panchmela Butter Fry"
+    },
+    "category": "Bakery / South Indian / Daal / Rice / Soup",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_MUNG_DAL_FRY_109",
+    "defaultName": "Mung Dal Fry",
+    "localizedNames": {
+      "hi": "Mung Dal Fry"
+    },
+    "category": "Bakery / South Indian / Daal / Rice / Soup",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_KATHI_RAHAR_DAL_110",
+    "defaultName": "Kathi Rahar Dal",
+    "localizedNames": {
+      "hi": "Kathi Rahar Dal"
+    },
+    "category": "Bakery / South Indian / Daal / Rice / Soup",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_CHANA_DAL_BUTTER_FRY_111",
+    "defaultName": "Chana Dal Butter Fry",
+    "localizedNames": {
+      "hi": "Chana Dal Butter Fry"
+    },
+    "category": "Bakery / South Indian / Daal / Rice / Soup",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_GREEN_MUNG_TARKA_112",
+    "defaultName": "Green Mung Tarka",
+    "localizedNames": {
+      "hi": "Green Mung Tarka"
+    },
+    "category": "Bakery / South Indian / Daal / Rice / Soup",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_JEERA_PULAO_BASMATI_113",
+    "defaultName": "Jeera Pulao (Basmati)",
+    "localizedNames": {
+      "hi": "Jeera Pulao (Basmati)"
+    },
+    "category": "Bakery / South Indian / Daal / Rice / Soup",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_JEERA_RICE_SONACHUR_114",
+    "defaultName": "Jeera Rice (Sonachur)",
+    "localizedNames": {
+      "hi": "Jeera Rice (Sonachur)"
+    },
+    "category": "Bakery / South Indian / Daal / Rice / Soup",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_PEAS_PULAO_115",
+    "defaultName": "Peas Pulao",
+    "localizedNames": {
+      "hi": "Peas Pulao"
+    },
+    "category": "Bakery / South Indian / Daal / Rice / Soup",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_KESARIA_PULAO_116",
+    "defaultName": "Kesaria Pulao",
+    "localizedNames": {
+      "hi": "Kesaria Pulao"
+    },
+    "category": "Bakery / South Indian / Daal / Rice / Soup",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_MEWA_PULAO_117",
+    "defaultName": "Mewa Pulao",
+    "localizedNames": {
+      "hi": "Mewa Pulao"
+    },
+    "category": "Bakery / South Indian / Daal / Rice / Soup",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_KASHMIRI_PULAO_118",
+    "defaultName": "Kashmiri Pulao",
+    "localizedNames": {
+      "hi": "Kashmiri Pulao"
+    },
+    "category": "Bakery / South Indian / Daal / Rice / Soup",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_VEG_BIRYANI_119",
+    "defaultName": "Veg Biryani",
+    "localizedNames": {
+      "hi": "Veg Biryani"
+    },
+    "category": "Bakery / South Indian / Daal / Rice / Soup",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_VEG_DUM_BIRYANI_120",
+    "defaultName": "Veg Dum Biryani",
+    "localizedNames": {
+      "hi": "Veg Dum Biryani"
+    },
+    "category": "Bakery / South Indian / Daal / Rice / Soup",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_KASHMIRI_BIRYANI_121",
+    "defaultName": "Kashmiri Biryani",
+    "localizedNames": {
+      "hi": "Kashmiri Biryani"
+    },
+    "category": "Bakery / South Indian / Daal / Rice / Soup",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_VEG_PULAO_122",
+    "defaultName": "Veg Pulao",
+    "localizedNames": {
+      "hi": "Veg Pulao"
+    },
+    "category": "Bakery / South Indian / Daal / Rice / Soup",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_TOMATO_SOUP_123",
+    "defaultName": "Tomato Soup",
+    "localizedNames": {
+      "hi": "Tomato Soup"
+    },
+    "category": "Bakery / South Indian / Daal / Rice / Soup",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_VEG_SWEET_CORN_SOUP_124",
+    "defaultName": "Veg Sweet Corn Soup",
+    "localizedNames": {
+      "hi": "Veg Sweet Corn Soup"
+    },
+    "category": "Bakery / South Indian / Daal / Rice / Soup",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_VEG_HOT__SOUR_SOUP_125",
+    "defaultName": "Veg Hot & Sour Soup",
+    "localizedNames": {
+      "hi": "Veg Hot & Sour Soup"
+    },
+    "category": "Bakery / South Indian / Daal / Rice / Soup",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_VEG_MANCHOW_SOUP_126",
+    "defaultName": "Veg Manchow Soup",
+    "localizedNames": {
+      "hi": "Veg Manchow Soup"
+    },
+    "category": "Bakery / South Indian / Daal / Rice / Soup",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_GREEN_SOUP_127",
+    "defaultName": "Green Soup",
+    "localizedNames": {
+      "hi": "Green Soup"
+    },
+    "category": "Bakery / South Indian / Daal / Rice / Soup",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_PALAK_SOUP_128",
+    "defaultName": "Palak Soup",
+    "localizedNames": {
+      "hi": "Palak Soup"
+    },
+    "category": "Bakery / South Indian / Daal / Rice / Soup",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_SWEET_CORN_MUNCH_SOUP_129",
+    "defaultName": "Sweet Corn Munch Soup",
+    "localizedNames": {
+      "hi": "Sweet Corn Munch Soup"
+    },
+    "category": "Bakery / South Indian / Daal / Rice / Soup",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_TOMATO_CORIANDER_SOUP_130",
+    "defaultName": "Tomato Coriander Soup",
+    "localizedNames": {
+      "hi": "Tomato Coriander Soup"
+    },
+    "category": "Bakery / South Indian / Daal / Rice / Soup",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_CHICKEN_SOUP_131",
+    "defaultName": "Chicken Soup",
+    "localizedNames": {
+      "hi": "Chicken Soup"
+    },
+    "category": "Bakery / South Indian / Daal / Rice / Soup",
+    "isVeg": false,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_KASHMIRI_ALOO_DUM_132",
+    "defaultName": "Kashmiri Aloo Dum",
+    "localizedNames": {
+      "hi": "Kashmiri Aloo Dum"
+    },
+    "category": "Vegetable Indian & Tawa",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_ALOO_DUM_IRANI_133",
+    "defaultName": "Aloo Dum Irani",
+    "localizedNames": {
+      "hi": "Aloo Dum Irani"
+    },
+    "category": "Vegetable Indian & Tawa",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_ALOO_DO_PYAZA_134",
+    "defaultName": "Aloo Do Pyaza",
+    "localizedNames": {
+      "hi": "Aloo Do Pyaza"
+    },
+    "category": "Vegetable Indian & Tawa",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_PALAK_KABLI_135",
+    "defaultName": "Palak Kabli",
+    "localizedNames": {
+      "hi": "Palak Kabli"
+    },
+    "category": "Vegetable Indian & Tawa",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_VEG_TOMATO_PURI_136",
+    "defaultName": "Veg Tomato Puri",
+    "localizedNames": {
+      "hi": "Veg Tomato Puri"
+    },
+    "category": "Vegetable Indian & Tawa",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_ALOO_PALAK_GRAVY_137",
+    "defaultName": "Aloo Palak Gravy",
+    "localizedNames": {
+      "hi": "Aloo Palak Gravy"
+    },
+    "category": "Vegetable Indian & Tawa",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_MIXED_VEG_138",
+    "defaultName": "Mixed Veg",
+    "localizedNames": {
+      "hi": "Mixed Veg"
+    },
+    "category": "Vegetable Indian & Tawa",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_VEG_NAVRATAN_KORMA_139",
+    "defaultName": "Veg Navratan Korma",
+    "localizedNames": {
+      "hi": "Veg Navratan Korma"
+    },
+    "category": "Vegetable Indian & Tawa",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_VEG_SINGAPURI_140",
+    "defaultName": "Veg Singapuri",
+    "localizedNames": {
+      "hi": "Veg Singapuri"
+    },
+    "category": "Vegetable Indian & Tawa",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_VEG_KURKURI_141",
+    "defaultName": "Veg Kurkuri",
+    "localizedNames": {
+      "hi": "Veg Kurkuri"
+    },
+    "category": "Vegetable Indian & Tawa",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_VEG_JAIPURI_142",
+    "defaultName": "Veg Jaipuri",
+    "localizedNames": {
+      "hi": "Veg Jaipuri"
+    },
+    "category": "Vegetable Indian & Tawa",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_VEG_MAKHANWALA_143",
+    "defaultName": "Veg Makhanwala",
+    "localizedNames": {
+      "hi": "Veg Makhanwala"
+    },
+    "category": "Vegetable Indian & Tawa",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_SAG_MATTAR_144",
+    "defaultName": "Sag Mattar",
+    "localizedNames": {
+      "hi": "Sag Mattar"
+    },
+    "category": "Vegetable Indian & Tawa",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_VEG_JHALFRAZI_145",
+    "defaultName": "Veg Jhalfrazi",
+    "localizedNames": {
+      "hi": "Veg Jhalfrazi"
+    },
+    "category": "Vegetable Indian & Tawa",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_CAPSICUM_CORN_FRY_146",
+    "defaultName": "Capsicum Corn Fry",
+    "localizedNames": {
+      "hi": "Capsicum Corn Fry"
+    },
+    "category": "Vegetable Indian & Tawa",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_PANEER_BABYCORN_MASALA_147",
+    "defaultName": "Paneer Babycorn Masala",
+    "localizedNames": {
+      "hi": "Paneer Babycorn Masala"
+    },
+    "category": "Vegetable Indian & Tawa",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_PANEER_BUTTER_MASALA_148",
+    "defaultName": "Paneer Butter Masala",
+    "localizedNames": {
+      "hi": "Paneer Butter Masala"
+    },
+    "category": "Vegetable Indian & Tawa",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_PANEER_SAHI_KORMA_149",
+    "defaultName": "Paneer Sahi Korma",
+    "localizedNames": {
+      "hi": "Paneer Sahi Korma"
+    },
+    "category": "Vegetable Indian & Tawa",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_KAJU_MUSHROOM_150",
+    "defaultName": "Kaju Mushroom",
+    "localizedNames": {
+      "hi": "Kaju Mushroom"
+    },
+    "category": "Vegetable Indian & Tawa",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_PALAK_CORN_WITH_CREAM_151",
+    "defaultName": "Palak Corn with Cream",
+    "localizedNames": {
+      "hi": "Palak Corn with Cream"
+    },
+    "category": "Vegetable Indian & Tawa",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_PALAK_MUSHROOM_152",
+    "defaultName": "Palak Mushroom",
+    "localizedNames": {
+      "hi": "Palak Mushroom"
+    },
+    "category": "Vegetable Indian & Tawa",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_MUSHROOM_DO_PYAZA_153",
+    "defaultName": "Mushroom do Pyaza",
+    "localizedNames": {
+      "hi": "Mushroom do Pyaza"
+    },
+    "category": "Vegetable Indian & Tawa",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_KAJU_CURRY_154",
+    "defaultName": "Kaju Curry",
+    "localizedNames": {
+      "hi": "Kaju Curry"
+    },
+    "category": "Vegetable Indian & Tawa",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_PANEER_MUSHROOM_TAJ_155",
+    "defaultName": "Paneer Mushroom Taj",
+    "localizedNames": {
+      "hi": "Paneer Mushroom Taj"
+    },
+    "category": "Vegetable Indian & Tawa",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_PANEER_PASANDA_156",
+    "defaultName": "Paneer Pasanda",
+    "localizedNames": {
+      "hi": "Paneer Pasanda"
+    },
+    "category": "Vegetable Indian & Tawa",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_PALAK_PANEER_157",
+    "defaultName": "Palak Paneer",
+    "localizedNames": {
+      "hi": "Palak Paneer"
+    },
+    "category": "Vegetable Indian & Tawa",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_MOTI_KOFTA_IN_PALAK_GRAVY_158",
+    "defaultName": "Moti Kofta in Palak Gravy",
+    "localizedNames": {
+      "hi": "Moti Kofta in Palak Gravy"
+    },
+    "category": "Vegetable Indian & Tawa",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_STUFFED_CAPSICUM_159",
+    "defaultName": "Stuffed Capsicum",
+    "localizedNames": {
+      "hi": "Stuffed Capsicum"
+    },
+    "category": "Vegetable Indian & Tawa",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_GREEN_PEAS_MASALA_160",
+    "defaultName": "Green Peas Masala",
+    "localizedNames": {
+      "hi": "Green Peas Masala"
+    },
+    "category": "Vegetable Indian & Tawa",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_CHANA_MASALA_161",
+    "defaultName": "Chana Masala",
+    "localizedNames": {
+      "hi": "Chana Masala"
+    },
+    "category": "Vegetable Indian & Tawa",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_KAJU_PANEER_162",
+    "defaultName": "Kaju Paneer",
+    "localizedNames": {
+      "hi": "Kaju Paneer"
+    },
+    "category": "Vegetable Indian & Tawa",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_PANEER_CAPSICUM_163",
+    "defaultName": "Paneer Capsicum",
+    "localizedNames": {
+      "hi": "Paneer Capsicum"
+    },
+    "category": "Vegetable Indian & Tawa",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_PANEER_TOMATO_164",
+    "defaultName": "Paneer Tomato",
+    "localizedNames": {
+      "hi": "Paneer Tomato"
+    },
+    "category": "Vegetable Indian & Tawa",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_MALAI_KOFTA_165",
+    "defaultName": "Malai Kofta",
+    "localizedNames": {
+      "hi": "Malai Kofta"
+    },
+    "category": "Vegetable Indian & Tawa",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_PANEER_TIKKA_BUTTER_MASALA_166",
+    "defaultName": "Paneer Tikka Butter Masala",
+    "localizedNames": {
+      "hi": "Paneer Tikka Butter Masala"
+    },
+    "category": "Vegetable Indian & Tawa",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_PANEER_PASANDA_167",
+    "defaultName": "Paneer Pasanda",
+    "localizedNames": {
+      "hi": "Paneer Pasanda"
+    },
+    "category": "Vegetable Indian & Tawa",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_PANEER_PHOOLCHAND_168",
+    "defaultName": "Paneer Phoolchand",
+    "localizedNames": {
+      "hi": "Paneer Phoolchand"
+    },
+    "category": "Vegetable Indian & Tawa",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_PANEER_KEEMA_169",
+    "defaultName": "Paneer Keema",
+    "localizedNames": {
+      "hi": "Paneer Keema"
+    },
+    "category": "Vegetable Indian & Tawa",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_MATTER_METHI_MALAI_170",
+    "defaultName": "Matter Methi Malai",
+    "localizedNames": {
+      "hi": "Matter Methi Malai"
+    },
+    "category": "Vegetable Indian & Tawa",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_PANEER_KARAHI_171",
+    "defaultName": "Paneer Karahi",
+    "localizedNames": {
+      "hi": "Paneer Karahi"
+    },
+    "category": "Vegetable Indian & Tawa",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_PANEER_BAGDADI_172",
+    "defaultName": "Paneer Bagdadi",
+    "localizedNames": {
+      "hi": "Paneer Bagdadi"
+    },
+    "category": "Vegetable Indian & Tawa",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_VEGETABLE_GARDEN_173",
+    "defaultName": "Vegetable Garden",
+    "localizedNames": {
+      "hi": "Vegetable Garden"
+    },
+    "category": "Vegetable Indian & Tawa",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_VEGETABLE_SIZZLER_174",
+    "defaultName": "Vegetable Sizzler",
+    "localizedNames": {
+      "hi": "Vegetable Sizzler"
+    },
+    "category": "Vegetable Indian & Tawa",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_VEGETABLE_KABAB_175",
+    "defaultName": "Vegetable Kabab",
+    "localizedNames": {
+      "hi": "Vegetable Kabab"
+    },
+    "category": "Vegetable Indian & Tawa",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_TAWA_VEG_FRIED_176",
+    "defaultName": "Tawa Veg (Fried)",
+    "localizedNames": {
+      "hi": "Tawa Veg (Fried)"
+    },
+    "category": "Vegetable Indian & Tawa",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_LACHA_PARATHA_177",
+    "defaultName": "Lacha Paratha",
+    "localizedNames": {
+      "hi": "Lacha Paratha"
+    },
+    "category": "Bread / Punjabi / Dahi",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_PITHI_KACHAURI_178",
+    "defaultName": "Pithi Kachauri",
+    "localizedNames": {
+      "hi": "Pithi Kachauri"
+    },
+    "category": "Bread / Punjabi / Dahi",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_MATTAR_KACHAURI_179",
+    "defaultName": "Mattar Kachauri",
+    "localizedNames": {
+      "hi": "Mattar Kachauri"
+    },
+    "category": "Bread / Punjabi / Dahi",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_PALAK_KACHAURI_180",
+    "defaultName": "Palak Kachauri",
+    "localizedNames": {
+      "hi": "Palak Kachauri"
+    },
+    "category": "Bread / Punjabi / Dahi",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_MISSI_ROTI_181",
+    "defaultName": "Missi Roti",
+    "localizedNames": {
+      "hi": "Missi Roti"
+    },
+    "category": "Bread / Punjabi / Dahi",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_STUFFED_KULCHA_182",
+    "defaultName": "Stuffed Kulcha",
+    "localizedNames": {
+      "hi": "Stuffed Kulcha"
+    },
+    "category": "Bread / Punjabi / Dahi",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_PUDINA_PARATHA_183",
+    "defaultName": "Pudina Paratha",
+    "localizedNames": {
+      "hi": "Pudina Paratha"
+    },
+    "category": "Bread / Punjabi / Dahi",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_GOBI_PARATHA_184",
+    "defaultName": "Gobi Paratha",
+    "localizedNames": {
+      "hi": "Gobi Paratha"
+    },
+    "category": "Bread / Punjabi / Dahi",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_ALOO_PARATHA_185",
+    "defaultName": "Aloo Paratha",
+    "localizedNames": {
+      "hi": "Aloo Paratha"
+    },
+    "category": "Bread / Punjabi / Dahi",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_MATTAR_PARATHA_186",
+    "defaultName": "Mattar Paratha",
+    "localizedNames": {
+      "hi": "Mattar Paratha"
+    },
+    "category": "Bread / Punjabi / Dahi",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_MAKAI_KI_ROTI_187",
+    "defaultName": "Makai Ki Roti",
+    "localizedNames": {
+      "hi": "Makai Ki Roti"
+    },
+    "category": "Bread / Punjabi / Dahi",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_SARSO_KA_SAAG_188",
+    "defaultName": "Sarso ka Saag",
+    "localizedNames": {
+      "hi": "Sarso ka Saag"
+    },
+    "category": "Bread / Punjabi / Dahi",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_WHITER_BUTTER_189",
+    "defaultName": "Whiter Butter",
+    "localizedNames": {
+      "hi": "Whiter Butter"
+    },
+    "category": "Bread / Punjabi / Dahi",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_GUR_190",
+    "defaultName": "Gur",
+    "localizedNames": {
+      "hi": "Gur"
+    },
+    "category": "Bread / Punjabi / Dahi",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_AMRITSARI_KULCHA_191",
+    "defaultName": "Amritsari Kulcha",
+    "localizedNames": {
+      "hi": "Amritsari Kulcha"
+    },
+    "category": "Bread / Punjabi / Dahi",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_KASHMIRI_NAN_192",
+    "defaultName": "Kashmiri Nan",
+    "localizedNames": {
+      "hi": "Kashmiri Nan"
+    },
+    "category": "Bread / Punjabi / Dahi",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_MULI_CHUTNI_193",
+    "defaultName": "Muli Chutni",
+    "localizedNames": {
+      "hi": "Muli Chutni"
+    },
+    "category": "Bread / Punjabi / Dahi",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_PINDI_CHANA_194",
+    "defaultName": "Pindi Chana",
+    "localizedNames": {
+      "hi": "Pindi Chana"
+    },
+    "category": "Bread / Punjabi / Dahi",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_PHENI_PARATHA_195",
+    "defaultName": "Pheni Paratha",
+    "localizedNames": {
+      "hi": "Pheni Paratha"
+    },
+    "category": "Bread / Punjabi / Dahi",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_CHUR_CHUR_NAN_196",
+    "defaultName": "Chur Chur Nan",
+    "localizedNames": {
+      "hi": "Chur Chur Nan"
+    },
+    "category": "Bread / Punjabi / Dahi",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_DAHI_BARA_197",
+    "defaultName": "Dahi Bara",
+    "localizedNames": {
+      "hi": "Dahi Bara"
+    },
+    "category": "Bread / Punjabi / Dahi",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_DAHI_PAKORA_198",
+    "defaultName": "Dahi Pakora",
+    "localizedNames": {
+      "hi": "Dahi Pakora"
+    },
+    "category": "Bread / Punjabi / Dahi",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_GUJIA_BARA_199",
+    "defaultName": "Gujia Bara",
+    "localizedNames": {
+      "hi": "Gujia Bara"
+    },
+    "category": "Bread / Punjabi / Dahi",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_MIX_FRUIT_RAITA_200",
+    "defaultName": "Mix Fruit Raita",
+    "localizedNames": {
+      "hi": "Mix Fruit Raita"
+    },
+    "category": "Bread / Punjabi / Dahi",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_VEGETABLE_RAITA_201",
+    "defaultName": "Vegetable Raita",
+    "localizedNames": {
+      "hi": "Vegetable Raita"
+    },
+    "category": "Bread / Punjabi / Dahi",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_KHEERA_RAITA_202",
+    "defaultName": "Kheera Raita",
+    "localizedNames": {
+      "hi": "Kheera Raita"
+    },
+    "category": "Bread / Punjabi / Dahi",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_ALOO_RAITA_203",
+    "defaultName": "Aloo Raita",
+    "localizedNames": {
+      "hi": "Aloo Raita"
+    },
+    "category": "Bread / Punjabi / Dahi",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_PINEAPPLE_RAITA_204",
+    "defaultName": "Pineapple Raita",
+    "localizedNames": {
+      "hi": "Pineapple Raita"
+    },
+    "category": "Bread / Punjabi / Dahi",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_IMLI_BARA_205",
+    "defaultName": "Imli Bara",
+    "localizedNames": {
+      "hi": "Imli Bara"
+    },
+    "category": "Bread / Punjabi / Dahi",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_TIRANGA_DAHI_BARA_206",
+    "defaultName": "Tiranga Dahi Bara",
+    "localizedNames": {
+      "hi": "Tiranga Dahi Bara"
+    },
+    "category": "Bread / Punjabi / Dahi",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_DAL_MASALA_207",
+    "defaultName": "Dal (Masala)",
+    "localizedNames": {
+      "hi": "Dal (Masala)"
+    },
+    "category": "Rajasthani / Italian / Thai / Salad / Chutney",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_BATI_208",
+    "defaultName": "Bati",
+    "localizedNames": {
+      "hi": "Bati"
+    },
+    "category": "Rajasthani / Italian / Thai / Salad / Chutney",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_CHURMA_209",
+    "defaultName": "Churma",
+    "localizedNames": {
+      "hi": "Churma"
+    },
+    "category": "Rajasthani / Italian / Thai / Salad / Chutney",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_GATTE_KI_SABJI_210",
+    "defaultName": "Gatte ki Sabji",
+    "localizedNames": {
+      "hi": "Gatte ki Sabji"
+    },
+    "category": "Rajasthani / Italian / Thai / Salad / Chutney",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_MANGORI_PAPAD_211",
+    "defaultName": "Mangori Papad",
+    "localizedNames": {
+      "hi": "Mangori Papad"
+    },
+    "category": "Rajasthani / Italian / Thai / Salad / Chutney",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_PLANE_MANGORI_212",
+    "defaultName": "Plane Mangori",
+    "localizedNames": {
+      "hi": "Plane Mangori"
+    },
+    "category": "Rajasthani / Italian / Thai / Salad / Chutney",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_SANGARI_KA_SAAG_213",
+    "defaultName": "Sangari ka Saag",
+    "localizedNames": {
+      "hi": "Sangari ka Saag"
+    },
+    "category": "Rajasthani / Italian / Thai / Salad / Chutney",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_ITALIAN_PASTA_WITH_COLOURED_CAPSICUM_VEG_RABE__SAUCE_214",
+    "defaultName": "Italian Pasta with coloured capsicum, veg rabe & sauce",
+    "localizedNames": {
+      "hi": "Italian Pasta with coloured capsicum, veg rabe & sauce"
+    },
+    "category": "Rajasthani / Italian / Thai / Salad / Chutney",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_ITALIAN_CREPES_WITH_TWO_FILLINGS_MUSHROOM__MIX_VEG_215",
+    "defaultName": "Italian Crepes with two fillings (Mushroom & Mix Veg)",
+    "localizedNames": {
+      "hi": "Italian Crepes with two fillings (Mushroom & Mix Veg)"
+    },
+    "category": "Rajasthani / Italian / Thai / Salad / Chutney",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_BAKED_PANEER_SPAGHETTI_AROMA_216",
+    "defaultName": "Baked Paneer Spaghetti Aroma",
+    "localizedNames": {
+      "hi": "Baked Paneer Spaghetti Aroma"
+    },
+    "category": "Rajasthani / Italian / Thai / Salad / Chutney",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_THAI_RICE_WITH_GREEN_CURRY_217",
+    "defaultName": "Thai Rice with Green Curry",
+    "localizedNames": {
+      "hi": "Thai Rice with Green Curry"
+    },
+    "category": "Rajasthani / Italian / Thai / Salad / Chutney",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_THAI_NOODLES_WITH_RED_CURRY_218",
+    "defaultName": "Thai Noodles with Red Curry",
+    "localizedNames": {
+      "hi": "Thai Noodles with Red Curry"
+    },
+    "category": "Rajasthani / Italian / Thai / Salad / Chutney",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_PATH_HIGH_WITH_CRUNCHY_VEGETABLES_219",
+    "defaultName": "Path High with Crunchy Vegetables",
+    "localizedNames": {
+      "hi": "Path High with Crunchy Vegetables"
+    },
+    "category": "Rajasthani / Italian / Thai / Salad / Chutney",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_THAI_POUCH_220",
+    "defaultName": "Thai Pouch",
+    "localizedNames": {
+      "hi": "Thai Pouch"
+    },
+    "category": "Rajasthani / Italian / Thai / Salad / Chutney",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_PAPAD_FRY_221",
+    "defaultName": "Papad Fry",
+    "localizedNames": {
+      "hi": "Papad Fry"
+    },
+    "category": "Rajasthani / Italian / Thai / Salad / Chutney",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_PAPAD_ROLL_222",
+    "defaultName": "Papad Roll",
+    "localizedNames": {
+      "hi": "Papad Roll"
+    },
+    "category": "Rajasthani / Italian / Thai / Salad / Chutney",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_MASALA_PAPAD_223",
+    "defaultName": "Masala Papad",
+    "localizedNames": {
+      "hi": "Masala Papad"
+    },
+    "category": "Rajasthani / Italian / Thai / Salad / Chutney",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_DISCO_PAPAD_224",
+    "defaultName": "Disco Papad",
+    "localizedNames": {
+      "hi": "Disco Papad"
+    },
+    "category": "Rajasthani / Italian / Thai / Salad / Chutney",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_KHICHIYA_PAPAD_225",
+    "defaultName": "Khichiya Papad",
+    "localizedNames": {
+      "hi": "Khichiya Papad"
+    },
+    "category": "Rajasthani / Italian / Thai / Salad / Chutney",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_GREEN_SALAD_226",
+    "defaultName": "Green Salad",
+    "localizedNames": {
+      "hi": "Green Salad"
+    },
+    "category": "Rajasthani / Italian / Thai / Salad / Chutney",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_SALAD_BAR_INDIAN_227",
+    "defaultName": "Salad Bar (Indian)",
+    "localizedNames": {
+      "hi": "Salad Bar (Indian)"
+    },
+    "category": "Rajasthani / Italian / Thai / Salad / Chutney",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_SALAD_BAR_IMPORTED_228",
+    "defaultName": "Salad Bar (Imported)",
+    "localizedNames": {
+      "hi": "Salad Bar (Imported)"
+    },
+    "category": "Rajasthani / Italian / Thai / Salad / Chutney",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_LAHSUN_CHUTNEY_229",
+    "defaultName": "Lahsun Chutney",
+    "localizedNames": {
+      "hi": "Lahsun Chutney"
+    },
+    "category": "Rajasthani / Italian / Thai / Salad / Chutney",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_HARA_CHUTNEY_230",
+    "defaultName": "Hara Chutney",
+    "localizedNames": {
+      "hi": "Hara Chutney"
+    },
+    "category": "Rajasthani / Italian / Thai / Salad / Chutney",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_FRUIT_CHUTNEY_231",
+    "defaultName": "Fruit Chutney",
+    "localizedNames": {
+      "hi": "Fruit Chutney"
+    },
+    "category": "Rajasthani / Italian / Thai / Salad / Chutney",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_MANGO_CHUTNEY_232",
+    "defaultName": "Mango Chutney",
+    "localizedNames": {
+      "hi": "Mango Chutney"
+    },
+    "category": "Rajasthani / Italian / Thai / Salad / Chutney",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_PLASTIC_CHUTNEY_233",
+    "defaultName": "Plastic Chutney",
+    "localizedNames": {
+      "hi": "Plastic Chutney"
+    },
+    "category": "Rajasthani / Italian / Thai / Salad / Chutney",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_PINEAPPLE_CHUTNEY_234",
+    "defaultName": "Pineapple Chutney",
+    "localizedNames": {
+      "hi": "Pineapple Chutney"
+    },
+    "category": "Rajasthani / Italian / Thai / Salad / Chutney",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_TOMATO_CHUTNEY_235",
+    "defaultName": "Tomato Chutney",
+    "localizedNames": {
+      "hi": "Tomato Chutney"
+    },
+    "category": "Rajasthani / Italian / Thai / Salad / Chutney",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_KHAJUR_AAMAVAT_CHUTNEY_236",
+    "defaultName": "Khajur Aamavat Chutney",
+    "localizedNames": {
+      "hi": "Khajur Aamavat Chutney"
+    },
+    "category": "Rajasthani / Italian / Thai / Salad / Chutney",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_CHICKEN_BUTTER_MASALA_237",
+    "defaultName": "Chicken Butter Masala",
+    "localizedNames": {
+      "hi": "Chicken Butter Masala"
+    },
+    "category": "Chicken / Mutton / Fish (Gravy & Snacks)",
+    "isVeg": false,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_CHICKEN_DO_PYAZA_238",
+    "defaultName": "Chicken Do Pyaza",
+    "localizedNames": {
+      "hi": "Chicken Do Pyaza"
+    },
+    "category": "Chicken / Mutton / Fish (Gravy & Snacks)",
+    "isVeg": false,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_SAHI_CHICKEN_239",
+    "defaultName": "Sahi Chicken",
+    "localizedNames": {
+      "hi": "Sahi Chicken"
+    },
+    "category": "Chicken / Mutton / Fish (Gravy & Snacks)",
+    "isVeg": false,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_CHICKEN_CURRY_240",
+    "defaultName": "Chicken Curry",
+    "localizedNames": {
+      "hi": "Chicken Curry"
+    },
+    "category": "Chicken / Mutton / Fish (Gravy & Snacks)",
+    "isVeg": false,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_CHICKEN_ROAST_B_MASALA_241",
+    "defaultName": "Chicken Roast B. Masala",
+    "localizedNames": {
+      "hi": "Chicken Roast B. Masala"
+    },
+    "category": "Chicken / Mutton / Fish (Gravy & Snacks)",
+    "isVeg": false,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_CHICKEN_KARAHI_242",
+    "defaultName": "Chicken Karahi",
+    "localizedNames": {
+      "hi": "Chicken Karahi"
+    },
+    "category": "Chicken / Mutton / Fish (Gravy & Snacks)",
+    "isVeg": false,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_CHICKEN_DEHATI_243",
+    "defaultName": "Chicken Dehati",
+    "localizedNames": {
+      "hi": "Chicken Dehati"
+    },
+    "category": "Chicken / Mutton / Fish (Gravy & Snacks)",
+    "isVeg": false,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_CHICKEN_TIKKA_B_244",
+    "defaultName": "Chicken Tikka B.",
+    "localizedNames": {
+      "hi": "Chicken Tikka B."
+    },
+    "category": "Chicken / Mutton / Fish (Gravy & Snacks)",
+    "isVeg": false,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_CHICKEN_CHILLY_245",
+    "defaultName": "Chicken Chilly",
+    "localizedNames": {
+      "hi": "Chicken Chilly"
+    },
+    "category": "Chicken / Mutton / Fish (Gravy & Snacks)",
+    "isVeg": false,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_CHICKEN_CHILLY_GARLIC_246",
+    "defaultName": "Chicken Chilly Garlic",
+    "localizedNames": {
+      "hi": "Chicken Chilly Garlic"
+    },
+    "category": "Chicken / Mutton / Fish (Gravy & Snacks)",
+    "isVeg": false,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_CHICKEN_CHILLY_BONELESS_247",
+    "defaultName": "Chicken Chilly Boneless",
+    "localizedNames": {
+      "hi": "Chicken Chilly Boneless"
+    },
+    "category": "Chicken / Mutton / Fish (Gravy & Snacks)",
+    "isVeg": false,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_CHICKEN_PAKORA_248",
+    "defaultName": "Chicken Pakora",
+    "localizedNames": {
+      "hi": "Chicken Pakora"
+    },
+    "category": "Chicken / Mutton / Fish (Gravy & Snacks)",
+    "isVeg": false,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_CHICKEN_DRY_FRY_249",
+    "defaultName": "Chicken Dry Fry",
+    "localizedNames": {
+      "hi": "Chicken Dry Fry"
+    },
+    "category": "Chicken / Mutton / Fish (Gravy & Snacks)",
+    "isVeg": false,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_CHICKEN_AFGHANI_250",
+    "defaultName": "Chicken Afghani",
+    "localizedNames": {
+      "hi": "Chicken Afghani"
+    },
+    "category": "Chicken / Mutton / Fish (Gravy & Snacks)",
+    "isVeg": false,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_CHICKEN_PUDINA_251",
+    "defaultName": "Chicken Pudina",
+    "localizedNames": {
+      "hi": "Chicken Pudina"
+    },
+    "category": "Chicken / Mutton / Fish (Gravy & Snacks)",
+    "isVeg": false,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_MUTTON_CURRY_252",
+    "defaultName": "Mutton Curry",
+    "localizedNames": {
+      "hi": "Mutton Curry"
+    },
+    "category": "Chicken / Mutton / Fish (Gravy & Snacks)",
+    "isVeg": false,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_TAWA_MUTTON_253",
+    "defaultName": "Tawa Mutton",
+    "localizedNames": {
+      "hi": "Tawa Mutton"
+    },
+    "category": "Chicken / Mutton / Fish (Gravy & Snacks)",
+    "isVeg": false,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_MUTTON_DO_PYAZA_254",
+    "defaultName": "Mutton Do Pyaza",
+    "localizedNames": {
+      "hi": "Mutton Do Pyaza"
+    },
+    "category": "Chicken / Mutton / Fish (Gravy & Snacks)",
+    "isVeg": false,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_PALAK_MUTTON_255",
+    "defaultName": "Palak Mutton",
+    "localizedNames": {
+      "hi": "Palak Mutton"
+    },
+    "category": "Chicken / Mutton / Fish (Gravy & Snacks)",
+    "isVeg": false,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_MUTTON_DEHATI_256",
+    "defaultName": "Mutton Dehati",
+    "localizedNames": {
+      "hi": "Mutton Dehati"
+    },
+    "category": "Chicken / Mutton / Fish (Gravy & Snacks)",
+    "isVeg": false,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_MUTTON_KARAHI_257",
+    "defaultName": "Mutton Karahi",
+    "localizedNames": {
+      "hi": "Mutton Karahi"
+    },
+    "category": "Chicken / Mutton / Fish (Gravy & Snacks)",
+    "isVeg": false,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_MASALA_MUTTON_FRY_258",
+    "defaultName": "Masala Mutton Fry",
+    "localizedNames": {
+      "hi": "Masala Mutton Fry"
+    },
+    "category": "Chicken / Mutton / Fish (Gravy & Snacks)",
+    "isVeg": false,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_MUTTON_KORMA_259",
+    "defaultName": "Mutton Korma",
+    "localizedNames": {
+      "hi": "Mutton Korma"
+    },
+    "category": "Chicken / Mutton / Fish (Gravy & Snacks)",
+    "isVeg": false,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_MUTTON_ROGON_JOSH_260",
+    "defaultName": "Mutton Rogon Josh",
+    "localizedNames": {
+      "hi": "Mutton Rogon Josh"
+    },
+    "category": "Chicken / Mutton / Fish (Gravy & Snacks)",
+    "isVeg": false,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_FISH_CURRY_261",
+    "defaultName": "Fish Curry",
+    "localizedNames": {
+      "hi": "Fish Curry"
+    },
+    "category": "Chicken / Mutton / Fish (Gravy & Snacks)",
+    "isVeg": false,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_LIVE_FISH_FRY_262",
+    "defaultName": "Live Fish Fry",
+    "localizedNames": {
+      "hi": "Live Fish Fry"
+    },
+    "category": "Chicken / Mutton / Fish (Gravy & Snacks)",
+    "isVeg": false,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_FISH_TOMATO_263",
+    "defaultName": "Fish Tomato",
+    "localizedNames": {
+      "hi": "Fish Tomato"
+    },
+    "category": "Chicken / Mutton / Fish (Gravy & Snacks)",
+    "isVeg": false,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_FISH_SARSON_264",
+    "defaultName": "Fish Sarson",
+    "localizedNames": {
+      "hi": "Fish Sarson"
+    },
+    "category": "Chicken / Mutton / Fish (Gravy & Snacks)",
+    "isVeg": false,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_FISH_AMRITSARI_265",
+    "defaultName": "Fish Amritsari",
+    "localizedNames": {
+      "hi": "Fish Amritsari"
+    },
+    "category": "Chicken / Mutton / Fish (Gravy & Snacks)",
+    "isVeg": false,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_FISH_PATRUI_266",
+    "defaultName": "Fish Patrui",
+    "localizedNames": {
+      "hi": "Fish Patrui"
+    },
+    "category": "Chicken / Mutton / Fish (Gravy & Snacks)",
+    "isVeg": false,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_VETKI_FISH_FRY_267",
+    "defaultName": "Vetki Fish Fry",
+    "localizedNames": {
+      "hi": "Vetki Fish Fry"
+    },
+    "category": "Chicken / Mutton / Fish (Gravy & Snacks)",
+    "isVeg": false,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_FISH_CUTLET_268",
+    "defaultName": "Fish Cutlet",
+    "localizedNames": {
+      "hi": "Fish Cutlet"
+    },
+    "category": "Chicken / Mutton / Fish (Gravy & Snacks)",
+    "isVeg": false,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_FISH_FINGER_269",
+    "defaultName": "Fish Finger",
+    "localizedNames": {
+      "hi": "Fish Finger"
+    },
+    "category": "Chicken / Mutton / Fish (Gravy & Snacks)",
+    "isVeg": false,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_CHICKEN_BIRYANI_270",
+    "defaultName": "Chicken Biryani",
+    "localizedNames": {
+      "hi": "Chicken Biryani"
+    },
+    "category": "Non-Vegetarian Biryani & Tandoor",
+    "isVeg": false,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_MUTTON_BIRYANI_271",
+    "defaultName": "Mutton Biryani",
+    "localizedNames": {
+      "hi": "Mutton Biryani"
+    },
+    "category": "Non-Vegetarian Biryani & Tandoor",
+    "isVeg": false,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_CHICKEN_DUM_BIRYANI_272",
+    "defaultName": "Chicken Dum Biryani",
+    "localizedNames": {
+      "hi": "Chicken Dum Biryani"
+    },
+    "category": "Non-Vegetarian Biryani & Tandoor",
+    "isVeg": false,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_MUTTON_DUM_BIRYANI_273",
+    "defaultName": "Mutton Dum Biryani",
+    "localizedNames": {
+      "hi": "Mutton Dum Biryani"
+    },
+    "category": "Non-Vegetarian Biryani & Tandoor",
+    "isVeg": false,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_CHICKEN_SEEKH_KABAB_274",
+    "defaultName": "Chicken Seekh Kabab",
+    "localizedNames": {
+      "hi": "Chicken Seekh Kabab"
+    },
+    "category": "Non-Vegetarian Biryani & Tandoor",
+    "isVeg": false,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_MUTTON_SEEKH_KABAB_275",
+    "defaultName": "Mutton Seekh Kabab",
+    "localizedNames": {
+      "hi": "Mutton Seekh Kabab"
+    },
+    "category": "Non-Vegetarian Biryani & Tandoor",
+    "isVeg": false,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_VETKI_SEEKH_KABAB_276",
+    "defaultName": "Vetki Seekh Kabab",
+    "localizedNames": {
+      "hi": "Vetki Seekh Kabab"
+    },
+    "category": "Non-Vegetarian Biryani & Tandoor",
+    "isVeg": true,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_CHICKEN_SPRING_ROLL_277",
+    "defaultName": "Chicken Spring Roll",
+    "localizedNames": {
+      "hi": "Chicken Spring Roll"
+    },
+    "category": "Non-Vegetarian Biryani & Tandoor",
+    "isVeg": false,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_CHICKEN_TANDOORI_278",
+    "defaultName": "Chicken Tandoori",
+    "localizedNames": {
+      "hi": "Chicken Tandoori"
+    },
+    "category": "Non-Vegetarian Biryani & Tandoor",
+    "isVeg": false,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_CHICKEN_MANCHURIAN_279",
+    "defaultName": "Chicken Manchurian",
+    "localizedNames": {
+      "hi": "Chicken Manchurian"
+    },
+    "category": "Non-Vegetarian Biryani & Tandoor",
+    "isVeg": false,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_CHICKEN_PAKORA_280",
+    "defaultName": "Chicken Pakora",
+    "localizedNames": {
+      "hi": "Chicken Pakora"
+    },
+    "category": "Non-Vegetarian Biryani & Tandoor",
+    "isVeg": false,
+    "isMainCourse": true
+  },
+  {
+    "id": "DISH_RASMALAI_CHILLED_281",
+    "defaultName": "Rasmalai Chilled",
+    "localizedNames": {
+      "hi": "Rasmalai Chilled"
+    },
+    "category": "Sweets / Ice Cream / Kulfi / Water / Pan",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_GULAB_JAMUN_WITH_RABARI_282",
+    "defaultName": "Gulab Jamun with Rabari",
+    "localizedNames": {
+      "hi": "Gulab Jamun with Rabari"
+    },
+    "category": "Sweets / Ice Cream / Kulfi / Water / Pan",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_KESARIA_JALEBI_283",
+    "defaultName": "Kesaria Jalebi",
+    "localizedNames": {
+      "hi": "Kesaria Jalebi"
+    },
+    "category": "Sweets / Ice Cream / Kulfi / Water / Pan",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_CHENA_DECORATION_284",
+    "defaultName": "Chena Decoration",
+    "localizedNames": {
+      "hi": "Chena Decoration"
+    },
+    "category": "Sweets / Ice Cream / Kulfi / Water / Pan",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_MALPUA_WITH_RABRI_285",
+    "defaultName": "Malpua with Rabri",
+    "localizedNames": {
+      "hi": "Malpua with Rabri"
+    },
+    "category": "Sweets / Ice Cream / Kulfi / Water / Pan",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_GAZAR_HALWA_286",
+    "defaultName": "Gazar Halwa",
+    "localizedNames": {
+      "hi": "Gazar Halwa"
+    },
+    "category": "Sweets / Ice Cream / Kulfi / Water / Pan",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_BADAM_HALWA_287",
+    "defaultName": "Badam Halwa",
+    "localizedNames": {
+      "hi": "Badam Halwa"
+    },
+    "category": "Sweets / Ice Cream / Kulfi / Water / Pan",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_MUNG_DAL_HALWA_288",
+    "defaultName": "Mung Dal Halwa",
+    "localizedNames": {
+      "hi": "Mung Dal Halwa"
+    },
+    "category": "Sweets / Ice Cream / Kulfi / Water / Pan",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_GOND_PAK_289",
+    "defaultName": "Gond Pak",
+    "localizedNames": {
+      "hi": "Gond Pak"
+    },
+    "category": "Sweets / Ice Cream / Kulfi / Water / Pan",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_ICE_CREAM_PARLOUR_290",
+    "defaultName": "Ice Cream Parlour",
+    "localizedNames": {
+      "hi": "Ice Cream Parlour"
+    },
+    "category": "Sweets / Ice Cream / Kulfi / Water / Pan",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_VANILLA_ICE_CREAM_291",
+    "defaultName": "Vanilla Ice Cream",
+    "localizedNames": {
+      "hi": "Vanilla Ice Cream"
+    },
+    "category": "Sweets / Ice Cream / Kulfi / Water / Pan",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_CHOCOLATE_ICE_CREAM_292",
+    "defaultName": "Chocolate Ice Cream",
+    "localizedNames": {
+      "hi": "Chocolate Ice Cream"
+    },
+    "category": "Sweets / Ice Cream / Kulfi / Water / Pan",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_STRAWBERRY_ICE_CREAM_293",
+    "defaultName": "Strawberry Ice Cream",
+    "localizedNames": {
+      "hi": "Strawberry Ice Cream"
+    },
+    "category": "Sweets / Ice Cream / Kulfi / Water / Pan",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_CONE_ICE_CREAM_294",
+    "defaultName": "Cone Ice Cream",
+    "localizedNames": {
+      "hi": "Cone Ice Cream"
+    },
+    "category": "Sweets / Ice Cream / Kulfi / Water / Pan",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_KESHAR_PISTA_295",
+    "defaultName": "Keshar Pista",
+    "localizedNames": {
+      "hi": "Keshar Pista"
+    },
+    "category": "Sweets / Ice Cream / Kulfi / Water / Pan",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_BUTTER_SCOTCH_296",
+    "defaultName": "Butter Scotch",
+    "localizedNames": {
+      "hi": "Butter Scotch"
+    },
+    "category": "Sweets / Ice Cream / Kulfi / Water / Pan",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_MATKA_KULFI_297",
+    "defaultName": "Matka Kulfi",
+    "localizedNames": {
+      "hi": "Matka Kulfi"
+    },
+    "category": "Sweets / Ice Cream / Kulfi / Water / Pan",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_MANGO_KULFI_298",
+    "defaultName": "Mango Kulfi",
+    "localizedNames": {
+      "hi": "Mango Kulfi"
+    },
+    "category": "Sweets / Ice Cream / Kulfi / Water / Pan",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_KULFI_FALUDA_299",
+    "defaultName": "Kulfi Faluda",
+    "localizedNames": {
+      "hi": "Kulfi Faluda"
+    },
+    "category": "Sweets / Ice Cream / Kulfi / Water / Pan",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_STICK_KULFI_300",
+    "defaultName": "Stick Kulfi",
+    "localizedNames": {
+      "hi": "Stick Kulfi"
+    },
+    "category": "Sweets / Ice Cream / Kulfi / Water / Pan",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_MINERAL_WATER_301",
+    "defaultName": "Mineral Water",
+    "localizedNames": {
+      "hi": "Mineral Water"
+    },
+    "category": "Sweets / Ice Cream / Kulfi / Water / Pan",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_200_ML_BOTTLE_302",
+    "defaultName": "200 ml Bottle",
+    "localizedNames": {
+      "hi": "200 ml Bottle"
+    },
+    "category": "Sweets / Ice Cream / Kulfi / Water / Pan",
+    "isVeg": true,
+    "isMainCourse": false
+  },
+  {
+    "id": "DISH_VARIETIES_OF_PAN_ON_REQUEST_303",
+    "defaultName": "Varieties of Pan (on request)",
+    "localizedNames": {
+      "hi": "Varieties of Pan (on request)"
+    },
+    "category": "Sweets / Ice Cream / Kulfi / Water / Pan",
+    "isVeg": true,
+    "isMainCourse": false
+  }
+]

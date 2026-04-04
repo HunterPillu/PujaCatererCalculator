@@ -9,5 +9,14 @@ object DatabaseSetup {
     fun createDatabase(driver: SqlDriver): AppDatabase {
         return AppDatabase(driver)
     }
+
+    fun createDatabase(platformContext: Any? = null): AppDatabase {
+        val driver = DatabaseDriverFactory(platformContext).createDriver(AppDatabase.Schema, DATABASE_NAME)
+        return createDatabase(driver)
+    }
+
+    fun createStore(platformContext: Any? = null): AppDatabaseStore {
+        return AppDatabaseStore(createDatabase(platformContext))
+    }
 }
 
