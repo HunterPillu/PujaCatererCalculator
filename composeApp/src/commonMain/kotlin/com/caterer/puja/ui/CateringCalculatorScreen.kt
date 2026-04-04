@@ -17,11 +17,14 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.wrapContentWidth
+import androidx.compose.foundation.layout.WindowInsets
+import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.systemBars
 import androidx.compose.material3.Button
 import androidx.compose.material3.Checkbox
 import androidx.compose.material3.AlertDialog
@@ -101,21 +104,27 @@ fun CateringCalculatorScreen(
     }
 
     Scaffold(
+        contentWindowInsets = WindowInsets.systemBars,
         bottomBar = {
-            Surface(shadowElevation = 4.dp) {
-                Button(
-                    onClick = {
-                        if (state.peopleInput.toIntOrNull()?.let { it > 0 } == true && selectedDishes.isNotEmpty()) {
-                            showConfirmDialog = true
-                        } else {
-                            onCalculate()
-                        }
-                    },
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(16.dp),
+            if (!showResultScreen) {
+                Surface(
+                    shadowElevation = 4.dp,
+                    modifier = Modifier.navigationBarsPadding(),
                 ) {
-                    Text("Calculate")
+                    Button(
+                        onClick = {
+                            if (state.peopleInput.toIntOrNull()?.let { it > 0 } == true && selectedDishes.isNotEmpty()) {
+                                showConfirmDialog = true
+                            } else {
+                                onCalculate()
+                            }
+                        },
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(16.dp),
+                    ) {
+                        Text("Calculate")
+                    }
                 }
             }
         },
@@ -208,7 +217,7 @@ fun CateringCalculatorScreen(
                             }
                         }
                     }
-                    
+
 
                     Spacer(modifier = Modifier.height(16.dp))
 
@@ -395,6 +404,33 @@ private fun CateringCalculatorScreenPreviewWithSelection() {
             onPeopleInputChange = {},
             onToggleDish = {},
             onCalculate = {},
+        )
+    }
+}
+
+@Preview
+@Composable
+private fun ResultScreenPreviewEmpty() {
+    MaterialTheme {
+        ResultScreen(
+            results = emptyList(),
+            onBackToEdit = {},
+        )
+    }
+}
+
+@Preview
+@Composable
+private fun ResultScreenPreviewWithData() {
+    MaterialTheme {
+        ResultScreen(
+            results = listOf(
+                CalculatedIngredient(name = "Chicken", quantityText = "25 kg"),
+                CalculatedIngredient(name = "Rice", quantityText = "9 kg"),
+                CalculatedIngredient(name = "Oil", quantityText = "1.8 liter"),
+                CalculatedIngredient(name = "Wheat Flour", quantityText = "8 kg"),
+            ),
+            onBackToEdit = {},
         )
     }
 }
